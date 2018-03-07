@@ -1,0 +1,33 @@
+{
+  "name": "ai_forum_2018",
+  "version": "1.0.0",
+  "description": "AI forum 2018",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProFatXuanAll/AI_forum_2018.git"
+  },
+  "keywords": [
+    "AI"
+  ],
+  "author": "ProFatXuanAll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProFatXuanAll/AI_forum_2018/issues"
+  },
+  "homepage": "https://github.com/ProFatXuanAll/AI_forum_2018#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node": "^9.7.0",
+    "npm": "^5.7.1",
+    "pug": "^2.0.0"
+    "sass": "^1.0.0-beta.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "gulp": "^3.9.1",
+  }
+}
