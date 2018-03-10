@@ -1,19 +1,21 @@
 -
-  let items = [
-    '首頁',
-    '關於',
-    '議程',
-    '會議簡報',
-    '交通資訊',
-    '主協辦單位',
-    '聯絡方式'
+
+  let navOptions = [
+    { url: `${home}`, name: '首頁' },
+    { url: `${registration}`, name: '報名' },
+    { url: `${host}`, name: '主協辦單位' },
+    { url: `${agenda}`, name: '議程' },
+    { url: `${location}`, name: '交通資訊' },
+    { url: `${contact}`, name: '聯絡方式' }
   ]
 
 mixin navigationBar( active )
   nav
     ul
-      each item in items
-        if active === item
-          li(class='active') #{item}
+      each navOption in navOptions
+        if active === navOption.url 
+          li(class='active')
+            a(href=navOption.url) #{navOption.name}
         else
-          li= item
+          li
+            a(href=navOption.url) #{navOption.name}

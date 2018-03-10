@@ -1,0 +1,46 @@
+extends layouts/base.pug
+
+block css
+  // no css
+
+block header
+  +navigationBar( `${ home }` )
+
+block content
+  section#banner(style='background:black;')
+  section
+    h1 線上報名
+  section
+    h1 報名費用
+    table
+      tr
+        th 時間
+        th 一般身份（TAAI會員）
+        th 一般身份（非TAAI會員）
+        th 學生（TAAI會員）
+        th 學生（非TAAI會員）
+      tr
+        td 早鳥優惠（4/7以前）
+        td 2500
+        td 3500
+        td 1400
+        td 1800
+      tr
+        td 正常報名（4/7以後）
+        td 3000
+        td 4000
+        td 1900
+        td 2300
+      tr
+        td 現場報名
+        td 3000
+        td 4000
+        td 1900
+        td 2300
+  section
+    
+
+
+block scripts
+  script(src='js/particles.js')
+  script(src='js/index.js')
