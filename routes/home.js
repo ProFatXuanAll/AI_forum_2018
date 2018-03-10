@@ -1,17 +1,24 @@
 const express = require( 'express' );
 
+const config = require( '../settings/server/config' );
+
 const route = express.Router();
 
 const urlSettings = ( req, res, next ) => {
+    let root = config.root;
     res.locals = {
         agenda: '/agenda',
         contact: '/contact',
         home: '/',
+        host: '/host',
         location: '/location',
         logoBlack: '/images/logoBlack.png',
         logoWhite: '/images/logoWhite.png',
         registration: '/registration',
     };
+    for( const name in res.locals ) {
+        res.locals[name] = `${ root }${ res.locals[name] }`;
+    }
     next();
 };
 

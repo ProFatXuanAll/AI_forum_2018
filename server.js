@@ -9,5 +9,5 @@ server.listen( config.port );
 
 server.set( 'view engine', 'pug' );
 
-server.use( express.static( 'static/dist' ) );
-server.use( '/', home );
+server.use( config.static, express.static( 'static/dist' ) );
+server.use( config.root, home );
