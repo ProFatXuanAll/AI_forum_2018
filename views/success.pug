@@ -1,0 +1,16 @@
+extends layouts/base.pug
+
+block css
+  // no css
+
+block header
+  +navigationBar( `${ registration }` )
+
+block content
+  section#banner(style='background:black;')
+  section
+    h1 註冊成功！
+
+block scripts
+  script(src='js/particles.js')
+  script(src='js/index.js')

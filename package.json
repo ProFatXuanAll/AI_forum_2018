@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ProFatXuanAll/AI_forum_2018#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "node": "^9.7.0",
     "npm": "^5.7.1",
