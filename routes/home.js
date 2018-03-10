@@ -12,6 +12,7 @@ const urlSettings = ( req, res, next ) => {
         home: '/',
         host: '/host',
         location: '/location',
+        accommodation: '/accommodation',
         logoBlack: '/images/logoBlack.png',
         logoWhite: '/images/logoWhite.png',
         registration: '/registration',
@@ -36,6 +37,10 @@ route.get( '/agenda', urlSettings, function( req, res ) {
 
 route.get( '/location', urlSettings, function( req, res ) {
     res.render( 'location' );
+} );
+
+route.get( '/accommodation', urlSettings, function( req, res ) {
+    res.render( 'accommodation' );
 } );
 
 route.get( '/contact', urlSettings, function( req, res ) {
