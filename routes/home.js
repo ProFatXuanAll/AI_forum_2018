@@ -34,6 +34,8 @@ function urlSettings( req, res, next ) {
         briefing: '/briefing',
         location: '/location',
         contact: '/contact',
+        logoBlack: '/images/logoBlack.png',
+        logoWhite: '/images/logoWhite.png',
     };
     next();
 };

@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    //- meta tag setup
+    //- html encoding utf8
+    meta(charset="utf-8")
+    //- RWD viewport setting
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    //- website description
+    meta(name="description" content="AI forum 2018")
+    //- website key words
+    meta(name="keywords" content="AI, AI forum 2018, NCKU CSIE")
+    //- website author
+    meta(name="author" content="ProFatXuanAll")
+    //- link tag setup
+    //- icon
+    link(rel='icon' type='image/png' href=`${ logoBlack }`)
+
+    //- title tag setup
+    title AI forum 2018
+
+    //- css link block
+    block css
+  body
+    //- header block
+    include ../components/header.pug
+    a(href=`${ home }`)
+      img(src=`${ logoBlack }`)
+    block header
+
+    //- content block
+    block content
+
+    //- footer block
+    include ../components/footer.pug
+
+    //- script block
+    block scripts

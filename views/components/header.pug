@@ -1,0 +1,18 @@
+-
+  let items = [
+    '首頁',
+    '關於',
+    '議程',
+    '會議簡報',
+    '交通資訊',
+    '聯絡方式'
+  ]
+
+mixin navigationBar( active )
+  nav
+    ul
+      each item in items
+        if active === item
+          li(class='active') #{item}
+        else
+          li= item
