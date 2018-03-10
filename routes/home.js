@@ -2,6 +2,19 @@ const express = require( 'express' );
 
 const route = express.Router();
 
+const urlSettings = ( req, res, next ) => {
+    res.locals = {
+        agenda: '/agenda',
+        contact: '/contact',
+        home: '/',
+        location: '/location',
+        logoBlack: '/images/logoBlack.png',
+        logoWhite: '/images/logoWhite.png',
+        registration: '/registration',
+    };
+    next();
+};
+
 route.get( '/', urlSettings, function( req, res ) {
     res.render( 'index' );
 } );
@@ -22,17 +35,5 @@ route.get( '/contact', urlSettings, function( req, res ) {
     res.render( 'contact' );
 } );
 
-function urlSettings( req, res, next ) {
-    res.locals = {
-        home: '/',
-        registration: '/registration',
-        agenda: '/agenda',
-        location: '/location',
-        contact: '/contact',
-        logoBlack: '/images/logoBlack.png',
-        logoWhite: '/images/logoWhite.png',
-    };
-    next();
-};
 
 module.exports = route;
