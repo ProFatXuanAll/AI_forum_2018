@@ -35,5 +35,8 @@ route.get( '/contact', urlSettings, function( req, res ) {
     res.render( 'contact' );
 } );
 
+route.get( '/host', urlSettings, function( req, res ) {
+    res.render( 'host' );
+} );
 
 module.exports = route;
