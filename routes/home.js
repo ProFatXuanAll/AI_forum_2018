@@ -38,7 +38,7 @@ function urlSettings( req, res, next ) {
         briefing: '/briefing',
         location: '/location',
         contact: '/contact',
-		host: '/host',
+        host: '/host',
         logoBlack: '/images/logoBlack.png',
         logoWhite: '/images/logoWhite.png',
     };
