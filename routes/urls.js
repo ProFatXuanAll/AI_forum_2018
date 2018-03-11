@@ -20,6 +20,8 @@ const urls = {
         logoBlack: '/images/logoBlack.png',
         logoWhite: '/images/logoWhite.png',
         headerCSS: '/css/header.css',
+        bannerCSS: '/css/banner.css',
+        footerCSS: '/css/footer.css',
         agendaCSS: '/css/agenda.css',
     },
 }
