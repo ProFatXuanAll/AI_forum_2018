@@ -15,17 +15,16 @@ html
     //- link tag setup
     //- icon
     link(rel='icon' type='image/png' href=`${ logoBlack }`)
-
+    link(href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet')
     //- title tag setup
     title AI forum 2018
 
     //- css link block
+    link(rel='stylesheet' type='text/css' href='/aiforum2018/css/header.css')
     block css
   body
     //- header block
     include ../components/header.pug
-    a(href=`${ home }`)
-      img(src=`${ logoBlack }`)
     block header
 
     //- content block

@@ -12,6 +12,8 @@
 
 mixin navigationBar( active )
   nav
+    a(href=`${ home }`)
+      img(src=`${ logoBlack }`)
     ul
       each navOption in navOptions
         if active === navOption.url 
