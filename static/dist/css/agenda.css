@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+figure img {
+  border-radius: 50%; }
+
+figcaption {
+  font-size: 32px; }

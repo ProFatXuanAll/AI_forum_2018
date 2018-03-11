@@ -23,12 +23,16 @@ gulp.task( 'sass', function() {
         .pipe( gulp.dest( './static/dist/css' ) )
 } );
 
+// sass watch
+gulp.task( 'sass:watch', function() {
+    gulp.watch( './static/src/sass/**/*.sass', [ 'sass' ]);
+} );
+
 // nodemon
 gulp.task( 'start', [ 'sass' ], function() {
     nodemon( {
         ext: 'js pug sass',
         script: 'server.js',
+        task: [ 'sass' ],
     } );
 } );
-
-//gulp.task( 'default', [ 'sass', 'start' ] );
