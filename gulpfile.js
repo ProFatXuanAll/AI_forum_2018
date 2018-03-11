@@ -23,14 +23,12 @@ gulp.task( 'sass', function() {
         .pipe( gulp.dest( './static/dist/css' ) )
 } );
 
-gulp.task( 'sass:watch', function() {
-    gulp.watch( './sass/**/*.sass', [ 'sass' ] )
-} );
-
 // nodemon
 gulp.task( 'start', [ 'sass' ], function() {
     nodemon( {
         ext: 'js pug sass',
-        script: 'server.js'
+        script: 'server.js',
     } );
 } );
+
+//gulp.task( 'default', [ 'sass', 'start' ] );

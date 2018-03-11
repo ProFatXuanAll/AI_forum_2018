@@ -1,5 +1,5 @@
 module.exports = {
     port: '',
-    root: '',
-    static: '',
+    root: '/',
+    static: '/',
 };
