@@ -4,12 +4,59 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  width: 100%;
+  height: 100%; }
+
 body {
+  width: 100%;
+  height: 100%;
   font-size: 32px;
   font-family: "Work Sans", Arial, sans-serif; }
 
-figure img {
-  border-radius: 50%; }
+.timeline {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 10%; }
+  .timeline:nth-of-type(2) {
+    background: linear-gradient(to bottom, black, #e6e6e6); }
+  .timeline:nth-of-type(3) {
+    background: linear-gradient(to bottom, #e6e6e6, white); }
+
+table {
+  min-width: 40%;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse; }
+
+th {
+  background: #666666;
+  color: #eeeeee; }
+
+tr:nth-of-type(even) {
+  background: #eeeeee;
+  color: #888888; }
+
+tr:nth-of-type(odd) {
+  background: #888888;
+  color: #eeeeee; }
+
+tr:hover {
+  background: #444444;
+  color: #ffffff; }
+
+figure {
+  text-align: center;
+  max-width: 15%;
+  margin-left: 10%;
+  display: inline-block; }
+  figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; }
 
 figcaption {
-  font-size: 32px; }
+  font-size: 24px; }
+
+article {
+  font-size: 16px; }
