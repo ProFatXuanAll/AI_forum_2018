@@ -24,11 +24,14 @@ html
 
     //- css link block
     link(rel='stylesheet' type='text/css' href=`${ static.headerCSS }`)
+    link(rel='stylesheet' type='text/css' href=`${ static.bannerCSS }`)
+    link(rel='stylesheet' type='text/css' href=`${ static.footerCSS }`)
     
     block css
   body
     //- header block
     include ../components/header.pug
+    include ../components/banner.pug
     block header
 
     //- content block

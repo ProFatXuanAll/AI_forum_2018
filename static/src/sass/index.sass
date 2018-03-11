@@ -1,6 +1,21 @@
 @import reset
 
-#banner
-  width: 100%
-  height: 100%
-  z-index: 0
+#mainContent
+  padding: 8%
+  article, figure
+    float: left
+    width: 50%
+  article
+    line-height: 1.8
+    h1
+      margin: 20px 0
+      font-size: 3rem
+    p
+      margin: 15px 0
+  img
+    height: 80%
+    width: 80%
+  &::after
+    content: ''
+    clear: both
+    display: table

@@ -7,14 +7,14 @@ block header
   +navigationBar( 'home' )
 
 block content
-  section#banner(style='background:black;')
-  section
-    h1 2018 人工智慧論壇
-    p 2018 年 5 月 4 日 - 5 月 5 日
-  section
-    h1 緣起
-    p 人工智慧（artificial intelligence、AI）這個名詞自1956年誕生以來，便不斷地與日新月異的現代科技一起發展進步，為提升人類的生活品質做出貢獻。今天，無論是在：機器人、汽車、手機、家電、乃至於搜尋引擎與推薦系統中，都存在著人工智慧扮演不可或缺的角色，與我們的生活緊密結合。
-    p 中華民國人工智慧學會(TAAI)創辦於1999年，AI Forum 已成為國內人工智慧研究領域一年一度的盛事！以論壇的方式，提供國內大學、研究單位及產業界的專家與學者一個交流與整合的平台。
+  +bannerText('2018 人工智慧論壇', '2018 年 5 月 4 日 - 5 月 5 日')
+  section#mainContent
+    article
+      h1 緣起
+      p 人工智慧（artificial intelligence、AI）這個名詞自1956年誕生以來，便不斷地與日新月異的現代科技一起發展進步，為提升人類的生活品質做出貢獻。今天，無論是在：機器人、汽車、手機、家電、乃至於搜尋引擎與推薦系統中，都存在著人工智慧扮演不可或缺的角色，與我們的生活緊密結合。
+      p 中華民國人工智慧學會(TAAI)創辦於1999年，AI Forum 已成為國內人工智慧研究領域一年一度的盛事！以論壇的方式，提供國內大學、研究單位及產業界的專家與學者一個交流與整合的平台。
+    figure
+      img(src=`${ static.logoBlack }`)
 
 block scripts
   script(src='js/particles.js')

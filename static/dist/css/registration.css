@@ -1,0 +1,17 @@
+#mainContent {
+  padding: 5%;
+  text-align: center; }
+
+#form {
+  background-color: #bbbbbb;
+  border-radius: 10px;
+  padding: 30px; }
+  #form input[type=text], #form input[type=email], #form input[type=tel] {
+    width: auto;
+    padding: 12px 18px;
+    margin: 8px;
+    display: block;
+    border: 2px solid;
+    border-radius: 5px; }
+  #form input[type=text]:focus {
+    background-color: #dddddd; }

@@ -1,16 +1,14 @@
 extends layouts/base.pug
 
 block css
-  // no css
+  link(rel='stylesheet' type='text/css' href='/aiforum2018/css/registration.css')
 
 block header
   +navigationBar( 'registration' )
 
 block content
-  section#banner(style='background:black;')
-  section
-    h1 線上報名
-  section
+  +bannerText('線上報名', '')
+  section#mainContent
     h1 報名費用
     table
       tr
@@ -37,7 +35,7 @@ block content
         td 4000
         td 1900
         td 2300
-  section
+  section#form
     form(action='' method='post')
       | 您的大名
       input(type='text' name='firstName' value='' placeholder='名字（First Name）' required)
