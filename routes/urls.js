@@ -19,6 +19,7 @@ const urls = {
     static: {
         logoBlack: '/images/logoBlack.png',
         logoWhite: '/images/logoWhite.png',
+        headerCSS: '/css/header.css',
     },
 }
 

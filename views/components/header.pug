@@ -1,11 +1,10 @@
 -
-
   let navOptions = root;
 
 mixin navigationBar( active )
   nav
-    a(href=`${ home }`)
-      img(src=`${ logoBlack }`)
+    a(href=`${ root.home }`)
+      img(src=`${ static.logoBlack }`)
     ul
       each navOption in navOptions
         if active === navOption.ename

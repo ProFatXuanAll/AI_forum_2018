@@ -13,15 +13,18 @@ html
     //- website author
     meta(name="author" content="ProFatXuanAll")
     //- link tag setup
-    //- icon
+    //- fonts
     link(href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet')
+    
+    //- icons
     link(rel='icon' type='image/png' href=`${ static.logoBlack }`)
 
     //- title tag setup
     title AI forum 2018
 
     //- css link block
-    link(rel='stylesheet' type='text/css' href='/aiforum2018/css/header.css')
+    link(rel='stylesheet' type='text/css' href=`${ static.headerCSS }`)
+    
     block css
   body
     //- header block
