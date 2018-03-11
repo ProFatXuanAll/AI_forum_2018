@@ -8,27 +8,30 @@ body {
   font-size: 32px;
   font-family: "Work Sans", Arial, sans-serif; }
 
-nav a {
-  float: left; }
-  nav a img {
-    width: 72px;
-    height: 72px; }
-
-nav ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #777777;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0; }
-
-nav li {
-  float: left; }
-  nav li a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none; }
-    nav li a:hover {
-      background-color: #333333; }
+nav {
+  z-index: 999;
+  padding: 0 40px;
+  background-color: #777777; }
+  nav a {
+    float: left; }
+    nav a img {
+      height: 60px;
+      width: 60px;
+      padding: 0; }
+  nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; }
+  nav li {
+    float: right; }
+    nav li a {
+      font-size: 0.9rem;
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 25px;
+      text-decoration: none; }
+      nav li a:hover {
+        background-color: #333333; }

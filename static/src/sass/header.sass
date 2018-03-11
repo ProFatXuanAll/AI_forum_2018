@@ -1,27 +1,30 @@
 @import reset
 
 nav
+  z-index: 999
+  padding: 0 40px
+  background-color: #777777
   a
     float: left
     img
-      width: 72px
-      height: 72px
+      height: 60px
+      width: 60px
+      padding: 0
   ul
     list-style-type: none
     overflow: hidden
-    background-color: #777777
     position: sticky
     position: -webkit-sticky
     top: 0
   li
-    float: left
+    float: right
     a
+      font-size: 0.9rem
       display: block
       color: #ffffff
       text-align: center
-      padding: 10px 20px
+      padding: 20px 25px
       text-decoration: none
       &:hover
         background-color: #333333
   .active
-    //padding-bottom: 30px
