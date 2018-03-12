@@ -1,15 +1,14 @@
 extends layouts/base.pug
 
 block css
-  // no css
+  link(rel='stylesheet' type='text/css' href=`${ static }/css/location.css`)
 
 block header
   +navigationBar( 'location' )
 
 block content
-  section#banner(style='background:black;')
+  +bannerText('交通資訊')
   section
-    h1 交通資訊
     p 國立成功大學
 
 block scripts
