@@ -1,15 +1,14 @@
 extends layouts/base.pug
 
 block css
-  // no css
+  link(rel='stylesheet' type='text/css' href='/aiforum2018/css/host.css')
 
 block header
   +navigationBar( 'host' )
 
 block content
-  section#banner(style='background:black;')
-  section
-    h1 主協辦單位
+  +bannerText('主協辦單位', '')
+  section#mainContent
     h2 中華民國科技部
     img(class='img-responsive' src='images/host_most.jpg' alt='中華民國科技部')
     h2 中華民國人工智慧學會 TAAI
@@ -24,4 +23,5 @@ block content
     img(class='img-responsive' src='images/host_gloria.jpg' alt='國立成功大學國際產學聯盟')
 
 block scripts
+  script(src='js/particles.js')
   script(src='js/index.js')
