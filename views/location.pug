@@ -7,9 +7,10 @@ block header
   +navigationBar( 'location' )
 
 block content
-  +bannerText('交通資訊')
-  section
-    p 國立成功大學
+  +bannerText('交通資訊', '')
+  section#mainContent
+    h1 國立成功大學
+    hr
 
 block scripts
   script(src=`${ static }/js/particles.js`)
