@@ -1,18 +1,68 @@
 #mainContent
-  padding: 5%
   text-align: center
+  width: 100%
+  padding: 5%
+h1
+  margin-bottom: 50px
+
+table
+  max-width: 1250px
+  margin: 0 auto
+  text-align: center
+  border-collapse: collapse
+
+th, tr, td
+  margin: 0 auto
+  font-size: 2rem
+  padding: 10px 8px
+
+th
+  min-width: 260px
+  background: #666666
+  color: #eeeeee
+
+tr:nth-of-type(even)
+  background: #eeeeee
+  color: #888888
+
+tr:nth-of-type(odd)
+  background: #888888
+  color: #eeeeee
+
+tr:hover
+  background: #444444
+  color: #ffffff
 
 #form
-  background-color: #bbbbbb
+  border-top: solid 7px #999999
+  font-size: 1.5rem
+  background-color: #e3e3e3
+  max-width: 1000px
+  margin: 0 auto 5% auto
+  text-align: center
   border-radius: 10px
   padding: 30px
+  %inputField
+    background-color: #ffffff
+    box-sizing: content-box
+    font-size: 1rem
+    width: 80%
+    height: 30px
+    padding: 10px 10px
+    margin: 20px auto
+    display: block
+    border-bottom: 3px solid #b4b4e9
+    border-radius: 5px
+    transition: background-color .5s
   input
     &[type=text], &[type=email], &[type=tel]
-      width: auto
-      padding: 12px 18px
-      margin: 8px
-      display: block
-      border: 2px solid
-      border-radius: 5px
-    &[type=text]:focus
-      background-color: #dddddd
+    @extend %inputField
+    &[type=text]:focus, &[type=email]:focus, &[type=tel]:focus
+      background-color: #eeeeff
+    &[type=submit]
+      margin-top: 50px
+      width: 50%
+  select
+    @extend %inputField
+    &:focus
+      background-color: #eeeeff
