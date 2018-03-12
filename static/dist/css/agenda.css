@@ -65,7 +65,12 @@ figure {
     border-radius: 50%; }
 
 figcaption {
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 10px; }
+  figcaption h3 {
+    font-weight: 700;
+    font-size: 1rem; }
 
 article {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #444444; }

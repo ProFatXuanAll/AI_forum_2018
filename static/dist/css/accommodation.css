@@ -26,21 +26,22 @@ body {
     margin-bottom: 2rem; }
   #mainContent h1 {
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #273063;
     margin-top: 2rem;
     margin-bottom: 1rem; }
-    #mainContent h1 p {
-      color: #273063;
-      font-size: 0.7rem; }
-    #mainContent h1 a:link {
-      text-decoration: none;
-      color: #273063; }
-    #mainContent h1 a:visited {
-      text-decoration: none;
-      color: #273063; }
-  #mainContent div {
+  #mainContent p {
+    color: #273063;
     font-size: 0.7rem; }
+  #mainContent a:link {
+    text-decoration: none;
+    color: #273063; }
+  #mainContent a:visited {
+    text-decoration: none;
+    color: #273063; }
+  #mainContent div {
+    font-size: 0.7rem;
+    margin-bottom: 1rem; }
     #mainContent div a {
       padding: 0.2rem;
       text-decoration: none;
