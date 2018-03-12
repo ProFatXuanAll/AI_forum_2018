@@ -6,13 +6,13 @@
 
 html {
   width: 100%;
-  height: 100%; }
-
-body {
-  width: 100%;
   height: 100%;
   font-size: 32px;
   font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
 
 nav {
   z-index: 999;
@@ -33,7 +33,7 @@ nav {
   nav li {
     float: right; }
     nav li a {
-      font-size: 0.9rem;
+      font-size: 0.5rem;
       display: block;
       color: #ffffff;
       text-align: center;

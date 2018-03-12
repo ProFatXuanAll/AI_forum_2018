@@ -1,14 +1,13 @@
 extends layouts/base.pug
 
 block css
-  link(rel='stylesheet' href=`${ static }/css/accommodation.css`)
+  link(rel='stylesheet' type='text/css' href=`${ static }/css/accomondation.css`)
 
 block header
   +navigationBar( 'accommondation' )
 
 block content
-  +bannerText('住宿資訊', '')
-  section#banner(style='background:black;')
+  +bannerText('住宿資訊')
   section#mainContent
     h1
       a(href='https://www.zendasuites.com.tw/') 成大會館
@@ -22,5 +21,5 @@ block content
       a(href=`${ static }/files/RV_Form_sgrr_en.pdf`) Download reservation form(English Ver.)
 
 block scripts
-  script(src='js/particles.js')
-  script(src='js/index.js')
+  script(src=`${ static }/js/particles.js`)
+  script(src=`${ static }/js/index.js`)

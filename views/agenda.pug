@@ -7,8 +7,7 @@ block header
   +navigationBar( 'agenda' )
 
 block content
-  section#banner(style='background:black;')
-    h1 議程
+  +bannerText('議程','')
   section.timeline
     table
       tr
@@ -26,39 +25,37 @@ block content
         td Opening
         td &nbsp;
       tr
-        td(rowspan='2') 13:30 - 14:30
+        td 13:30 - 14:30
         td Keynote I:
-        td(rowspan='2') Prof.Hsu 教授
-      tr
-        td Dr. Haixun Wang
+          br 
+          | Dr. Haixun Wang,
           br
           | Director of NLP, Amazon
+        td Prof.Hsu 教授
       tr
         td 14:30 - 14:45
         td Short Break
         td &nbsp;
       tr
-        td(rowspan='2') 14:45 - 15:45
-        td Keynote II:
+        td 14:45 - 15:45
+        td Keynote II: "AI in Singapore"
           br
-          | "AI in Singapore"
-        td(rowspan='2') Prof. Kao
-      tr
-        td Prof. Lim Ee Peng
+          | Prof. Lim Ee Peng
           br
           | Professor of Information Systems
           br
           | Director, Living Analytics Research Centre
+        td Prof. Kao
       tr
         td 15:45 - 16:00
         td Coffee Break
         td &nbsp;
       tr
-        td(rowspan='2') 16:00 - 17:30
+        td 16:00 - 17:30
         td Panel Discussion
-        td(rowspan='2') TBA
-      tr
-        td Gape between Research and Industry for AI
+          br
+          | Gape between Research and Industry for AI
+        td TBA
       tr
         td 17:30 - 19:00
         td Banquet
@@ -72,31 +69,31 @@ block content
         th Event
         th Chair
       tr
-        td(rowspan='2') 9:00 - 10:00
-        td Keynote II:
+        td 9:00 - 10:00
+        td Keynote III:
           br
           | "Big Data Analytics (tentative)"
-        td(rowspan='2') TBA
-      tr
-        td Prof. Hang Li
+          br
+          | Prof. Hang Li
           br
           | CTO, Toutiao
+        td TBA
       tr
-        td(rowspan='2') 10:00 - 11:00
+        td 10:00 - 11:00
         td Special Session: Industrial Insight
-        td(rowspan='2') TBA
-      tr
+          br
+          | TBA
         td TBA
       tr
         td 11:00 - 11:15
         td Coffee Break
         td &nbsp;
       tr
-        td(rowspan='2') 11:15 - 12:15
+        td 11:15 - 12:15
         td Special Session: Ph.D. Moonshoot
-        td(rowspan='2') TBA
-      tr
-        td Innovative Work from Fresh AI Ph.D. students
+          br
+          | Innovative Work from Fresh AI Ph.D. students
+        td TBA
       tr
         td 12:15 - 13:30
         td End

@@ -1,11 +1,21 @@
 const express = require( 'express' );
+const mongoose = require( 'mongoose' );
 
-const config = require( '../settings/server/config' );
+const serverConfig = require( '../settings/server/config' );
+const dbConfig = require( '../settings/database/config' );
+const Attendee = require( '../models/attendee' );
+
+const db = mongoose.connection;
+db.on( 'error', console.error.bind( console, 'connection error:' ) );
+db.once( 'open', () => {
+    console.log( 'we are connected!' );
+} );
+mongoose.connect( dbConfig.url() );
 
 const route = express.Router();
 
-const root_path = config.root;
-const static_path = config.static;
+const root_path = serverConfig.root;
+const static_path = serverConfig.static;
 const urls = {
     root: [
         { cname: '聯絡方式', ename: 'contact', url: '/contact' },
@@ -35,6 +45,18 @@ route.get( '/registration', urlSettings, function( req, res ) {
 } );
 
 route.post( '/registration', urlSettings, function( req, res ) {
+    let newAttendee = new Attendee( {
+       firstName: req.body.firstName,
+       lastName: req.body.lastName,
+       email: req.body.email,
+       organization: req.body.organization,
+       phone: req.body.phone,
+       fee: req.body.fee,
+       taai: req.body.taai,
+       dietary: req.body.dietary,
+       memo: req.body.memo
+    } );
+    newAttendee.save().then(() => console.log( 'new attendee sign up!')).catch(() => console.log( 'failed to sign up!'))
     console.log( req.body.firstName );
     res.render( 'success' );
 } );
