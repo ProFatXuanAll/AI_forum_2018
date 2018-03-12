@@ -1,7 +1,7 @@
 extends layouts/base.pug
 
 block css
-  link(rel='stylesheet' type='text/css' href='/aiforum2018/css/registration.css')
+  link(rel='stylesheet' type='text/css' href=`${ static }/css/registration.css`)
 
 block header
   +navigationBar( 'registration' )
@@ -76,5 +76,5 @@ block content
       input(type='submit' value='送出')
 
 block scripts
-  script(src='js/particles.js')
-  script(src='js/index.js')
+  script(src=`${ static }/js/particles.js`)
+  script(src=`${ static }/js/index.js`)
