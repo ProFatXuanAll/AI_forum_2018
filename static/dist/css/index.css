@@ -6,13 +6,13 @@
 
 html {
   width: 100%;
-  height: 100%; }
-
-body {
-  width: 100%;
   height: 100%;
   font-size: 32px;
   font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
 
 #mainContent {
   padding: 8%; }
@@ -20,10 +20,8 @@ body {
     float: left;
     width: 50%; }
   #mainContent article {
+    font-size: .75rem;
     line-height: 1.8; }
-    #mainContent article h1 {
-      margin: 20px 0;
-      font-size: 3rem; }
     #mainContent article p {
       margin: 15px 0; }
   #mainContent img {
