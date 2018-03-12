@@ -1,2 +1,46 @@
 @import reset
 
+$titleTextColor: #273063
+$contentTextColor: #595a5f
+$linkHoverBgColor: #8e8f95
+
+#mainContent
+  text-align: center
+  width: 100%
+  padding: 5%
+hr
+  color: $linkHoverBgColor
+  border-width: 1px
+  display:block
+  border-style: inset
+  margin-bottom: 2rem
+h1
+  font-weight: 100
+  font-size: 4rem
+  font-color: $titleTextColor
+  margin-top: 4rem
+  margin-bottom: 1rem
+  a
+    &:link
+      text-decoration: none
+      color: $titleTextColor
+    &:visited
+      text-decoration: none
+      color: $titleTextColor
+    &:hover
+div
+  margin-top: 1rem
+  margin-bottom: 1rem
+  a
+    padding: 0.2rem
+    text-decoration: none
+    font-size: 2rem
+    color: $contentTextColor
+    -o-transition: color 0.2s ease-out, background 0.2s ease-in
+    -ms-transition: color 0.2s ease-out, background 0.2s ease-in
+    -moz-transition: color 0.2s ease-out, background 0.2s ease-in
+    -webkit-transition: color 0.2s ease-out, background 0.2s ease-in
+    transition: color 0.2s ease-out, background 0.2s ease-in
+    &:hover
+      color: #ffffff
+      background: $linkHoverBgColor
