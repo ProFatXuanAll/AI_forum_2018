@@ -1,7 +1,7 @@
 extends layouts/base.pug
 
 block css
-  link(rel='stylesheet' type='text/css' href='/aiforum2018/css/host.css')
+  link(rel='stylesheet' type='text/css' href=`${ static }/css/host.css`)
 
 block header
   +navigationBar( 'host' )
@@ -23,5 +23,5 @@ block content
     img(class='img-responsive' src=`${ static }/images/host_gloria.jpg` alt='國立成功大學國際產學聯盟')
 
 block scripts
-  script(src='js/particles.js')
-  script(src='js/index.js')
+  script(src=`${ static }/js/particles.js`)
+  script(src=`${ static }/js/index.js`)
