@@ -15,12 +15,13 @@ body {
   height: 100%; }
 
 #mainContent {
+  background: linear-gradient(to bottom, #e6e6e6, white, white, white, white);
   text-align: center;
   width: 100%;
   padding: 5%; }
   #mainContent h1 {
     font-weight: 100;
-    font-size: 4rem;
+    font-size: 2rem;
     color: #273063;
     margin-top: 4rem;
     margin-bottom: 1rem; }
@@ -29,4 +30,4 @@ hr {
   color: #8e8f95;
   border-width: 1px;
   border-style: inset;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }

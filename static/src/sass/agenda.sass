@@ -6,42 +6,50 @@
   padding-top: 10%
 
   &:nth-of-type(2)
-    background: linear-gradient(to bottom, black, darken(white, 10%))
-
-  &:nth-of-type(3)
-    background: linear-gradient(to bottom, darken(white, 10%), white)
+    background: linear-gradient(to bottom, darken(white, 10%), white, white, white, white)
 
 table
-  min-width: 40%
-  margin: auto
+  max-width: 80%
+  margin: 50px auto
   text-align: center
   border-collapse: collapse
+
+th, tr, td
+  margin: 0 auto
+  font-size: .7rem
+  padding: 10px 8px
 
 th
   background: #666666
   color: #eeeeee
 
 tr:nth-of-type(even)
-  background: #eeeeee
+  background: rgba(0,0,0,.02)
   color: #888888
 
 tr:nth-of-type(odd)
-  background: #888888
-  color: #eeeeee
+  background: rgba(0,0,0,.04)
+  color: #888888
 
 tr:hover
-  background: #444444
+  background: #888888
   color: #ffffff
+
+.speaker
+  width: 100%
+  padding: 8%
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+  grid-column-gap: 8%
 
 figure
   text-align: center
-  max-width: 15%
-  margin-left: 10%
   display: inline-block
   
   img
     width: 200px
     height: 200px
+    margin: auto
     border-radius: 50%
 
 figcaption

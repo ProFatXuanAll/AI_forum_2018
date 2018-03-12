@@ -1,6 +1,7 @@
 #mainContent {
-  margin: 50px auto;
-  max-width: 80%; }
+  background: linear-gradient(to bottom, #e6e6e6, white, white, white, white);
+  margin: 0 auto;
+  max-width: 100%; }
   #mainContent img {
     display: block;
     margin: 50px auto;

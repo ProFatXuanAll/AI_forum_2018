@@ -17,7 +17,7 @@ body {
 nav {
   z-index: 999;
   padding: 0 40px;
-  background-color: #777777; }
+  background: black; }
   nav a {
     float: left; }
     nav a img {
@@ -37,7 +37,8 @@ nav {
       display: block;
       color: #ffffff;
       text-align: center;
-      padding: 20px 25px;
-      text-decoration: none; }
+      padding: 30px 25px 10px;
+      text-decoration: none;
+      transition: border-bottom .5s; }
       nav li a:hover {
-        background-color: #333333; }
+        border-bottom: 5px solid white; }

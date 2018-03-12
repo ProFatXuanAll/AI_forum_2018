@@ -5,42 +5,42 @@ $contentTextColor: #595a5f
 $linkHoverBgColor: #8e8f95
 
 #mainContent
+  background: linear-gradient(to bottom, darken(white, 10%), white, white, white, white)
   text-align: center
   width: 100%
   padding: 5%
-hr
-  color: $linkHoverBgColor
-  border-width: 1px
-  display:block
-  border-style: inset
-  margin-bottom: 2rem
-h1
-  font-weight: 100
-  font-size: 2rem
-  font-color: $titleTextColor
-  margin-top: 2rem
-  margin-bottom: 1rem
-  a
-    &:link
+
+  hr
+    color: $linkHoverBgColor
+    border-width: 1px
+    display:block
+    border-style: inset
+    margin-bottom: 2rem
+  h1
+    font-weight: 100
+    font-size: 2rem
+    font-color: $titleTextColor
+    margin-top: 2rem
+    margin-bottom: 1rem
+    a
+      &:link
+        text-decoration: none
+        color: $titleTextColor
+      &:visited
+        text-decoration: none
+        color: $titleTextColor
+      &:hover
+  div
+    a
+      padding: 0.2rem
       text-decoration: none
-      color: $titleTextColor
-    &:visited
-      text-decoration: none
-      color: $titleTextColor
-    &:hover
-div
-  margin-top: 1rem
-  margin-bottom: 1rem
-  a
-    padding: 0.2rem
-    text-decoration: none
-    font-size: 0.8rem
-    color: $contentTextColor
-    -o-transition: color 0.2s ease-out, background 0.2s ease-in
-    -ms-transition: color 0.2s ease-out, background 0.2s ease-in
-    -moz-transition: color 0.2s ease-out, background 0.2s ease-in
-    -webkit-transition: color 0.2s ease-out, background 0.2s ease-in
-    transition: color 0.2s ease-out, background 0.2s ease-in
-    &:hover
-      color: #ffffff
-      background: $linkHoverBgColor
+      font-size: 0.8rem
+      color: $contentTextColor
+      -o-transition: color 0.2s ease-out, background 0.2s ease-in
+      -ms-transition: color 0.2s ease-out, background 0.2s ease-in
+      -moz-transition: color 0.2s ease-out, background 0.2s ease-in
+      -webkit-transition: color 0.2s ease-out, background 0.2s ease-in
+      transition: color 0.2s ease-out, background 0.2s ease-in
+      &:hover
+        color: #ffffff
+        background: $linkHoverBgColor

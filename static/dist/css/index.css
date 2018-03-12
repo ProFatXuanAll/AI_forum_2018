@@ -15,6 +15,7 @@ body {
   height: 100%; }
 
 #mainContent {
+  background: linear-gradient(to bottom, #e6e6e6, white, white, white, white);
   padding: 8%; }
   #mainContent article, #mainContent figure {
     float: left;
@@ -23,8 +24,8 @@ body {
     font-size: .7rem;
     line-height: 1.8; }
     #mainContent article p {
-      font-size: 1.5rem;
-      margin: 15px 0; }
+      margin: 15px 0;
+      color: #888888; }
   #mainContent img {
     height: 80%;
     width: 80%; }

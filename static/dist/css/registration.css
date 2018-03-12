@@ -15,6 +15,7 @@ body {
   height: 100%; }
 
 #mainContent {
+  background: linear-gradient(to bottom, #e6e6e6, white, white, white, white);
   text-align: center;
   width: 100%;
   padding: 5%; }
@@ -49,6 +50,9 @@ tr:nth-of-type(odd) {
 tr:hover {
   background: #888888;
   color: #ffffff; }
+
+section {
+  padding: 5%; }
 
 #form {
   border-top: solid 7px #999999;
