@@ -4,7 +4,7 @@
 mixin navigationBar( active )
   nav
     a(href=`${ root.home }`)
-      img(src=`${ static.logoWhite }`)
+      img(src=`${ static }/images/logoWhite.png`)
     ul
       each navOption in navOptions
         if active === navOption.ename

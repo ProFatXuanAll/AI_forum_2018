@@ -16,23 +16,13 @@ const urls = {
         { cname: '報名', ename: 'registration', url: '/registration' },
         { cname: '首頁', ename: 'home', url: '/' },
     ],
-    static: {
-        logoBlack: '/images/logoBlack.png',
-        logoWhite: '/images/logoWhite.png',
-        headerCSS: '/css/header.css',
-        bannerCSS: '/css/banner.css',
-        footerCSS: '/css/footer.css',
-        agendaCSS: '/css/agenda.css',
-    },
 }
 
 urls.root.forEach( function( obj ) { obj.url = `${ root_path }${ obj.url }`} )
-for( const name in urls.static ) {
-    urls.static[ name ] = `${ static_path }${ urls.static[ name ] }`;
-}
 
 const urlSettings = ( req, res, next ) => {
-    res.locals = { root: urls.root, static: urls.static };
+    res.locals = { root: urls.root };
+    res.locals.static = static_path;
     next();
 };
 
