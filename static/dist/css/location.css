@@ -21,13 +21,12 @@ body {
   padding: 5%; }
   #mainContent h1 {
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1rem;
     font-color: #273063;
-    margin-top: 2rem;
-    margin-bottom: 1rem; }
+    margin-top: 2rem; }
 
-hr {
-  color: #8e8f95;
-  border-width: 1px;
-  border-style: inset;
-  margin-bottom: 1rem; }
+#map {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-bottom: 10%; }

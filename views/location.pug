@@ -9,9 +9,11 @@ block header
 block content
   +bannerText('交通資訊', '')
   section#mainContent
-    h1 國立成功大學
-    hr
+    h1 國立成功大學資訊工程學系
+  section#map
 
 block scripts
   script(src=`${ static }/js/particles.js`)
   script(src=`${ static }/js/index.js`)
+  script(src=`${ static }/js/googleMap.js`)
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqat2GqcAiq50z532bofCqOdTwH6LnwsI&callback=initMap')

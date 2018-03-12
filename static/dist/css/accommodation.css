@@ -27,25 +27,25 @@ body {
   #mainContent h1 {
     font-weight: 100;
     font-size: 2rem;
-    font-color: #273063;
+    color: #273063;
     margin-top: 2rem;
     margin-bottom: 1rem; }
+    #mainContent h1 p {
+      color: #273063;
+      font-size: 0.7rem; }
     #mainContent h1 a:link {
       text-decoration: none;
       color: #273063; }
     #mainContent h1 a:visited {
       text-decoration: none;
       color: #273063; }
-  #mainContent div a {
-    padding: 0.2rem;
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: #595a5f;
-    -o-transition: color 0.2s ease-out, background 0.2s ease-in;
-    -ms-transition: color 0.2s ease-out, background 0.2s ease-in;
-    -moz-transition: color 0.2s ease-out, background 0.2s ease-in;
-    -webkit-transition: color 0.2s ease-out, background 0.2s ease-in;
-    transition: color 0.2s ease-out, background 0.2s ease-in; }
-    #mainContent div a:hover {
-      color: #ffffff;
-      background: #8e8f95; }
+  #mainContent div {
+    font-size: 0.7rem; }
+    #mainContent div a {
+      padding: 0.2rem;
+      text-decoration: none;
+      color: #595a5f;
+      transition: color 0.2s ease-out, background 0.2s ease-in; }
+      #mainContent div a:hover {
+        color: #ffffff;
+        background: #8e8f95; }

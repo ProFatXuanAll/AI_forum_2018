@@ -15,14 +15,16 @@ body {
   height: 100%; }
 
 footer {
-  padding: 40px;
+  padding-top: 5%;
+  padding-bottom: 2%;
   background-color: #777777;
   color: #ffffff; }
   footer h1 {
     font-size: 1rem;
     text-align: center;
     margin: 10px auto; }
-  footer address, footer p {
+  footer p {
+    margin-left: 45%; }
+  footer span {
     font-size: .5rem;
-    text-align: center;
-    margin: 0 auto; }
+    text-align: center; }

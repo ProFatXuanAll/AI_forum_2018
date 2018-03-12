@@ -19,9 +19,14 @@ $linkHoverBgColor: #8e8f95
   h1
     font-weight: 100
     font-size: 2rem
-    font-color: $titleTextColor
+    color: $titleTextColor
     margin-top: 2rem
     margin-bottom: 1rem
+
+    p
+      color: $titleTextColor
+      font-size: 0.7rem
+
     a
       &:link
         text-decoration: none
@@ -31,15 +36,11 @@ $linkHoverBgColor: #8e8f95
         color: $titleTextColor
       &:hover
   div
+    font-size: 0.7rem
     a
       padding: 0.2rem
       text-decoration: none
-      font-size: 0.8rem
       color: $contentTextColor
-      -o-transition: color 0.2s ease-out, background 0.2s ease-in
-      -ms-transition: color 0.2s ease-out, background 0.2s ease-in
-      -moz-transition: color 0.2s ease-out, background 0.2s ease-in
-      -webkit-transition: color 0.2s ease-out, background 0.2s ease-in
       transition: color 0.2s ease-out, background 0.2s ease-in
       &:hover
         color: #ffffff
