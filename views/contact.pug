@@ -1,14 +1,16 @@
 extends layouts/base.pug
 
 block css
-  // no css
+  link(rel='stylesheet' href=`${ static }/css/contact.css`)
 
 block header
   +navigationBar( 'contact' )
 
 block content
   +bannerText('聯絡我們')
-  section
+  section#mainContent
+    h1 聯絡我們
+    hr
 
 block scripts
   script(src=`${ static }/js/particles.js`)
