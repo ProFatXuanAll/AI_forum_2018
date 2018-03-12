@@ -25,6 +25,7 @@ body {
       margin: 20px 0;
       font-size: 3rem; }
     #mainContent article p {
+      font-size: 1.5rem;
       margin: 15px 0; }
   #mainContent img {
     height: 80%;

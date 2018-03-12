@@ -23,15 +23,15 @@ th {
   color: #eeeeee; }
 
 tr:nth-of-type(even) {
-  background: #eeeeee;
+  background: rgba(0, 0, 0, 0.02);
   color: #888888; }
 
 tr:nth-of-type(odd) {
-  background: #888888;
-  color: #eeeeee; }
+  background: rgba(0, 0, 0, 0.04);
+  color: #888888; }
 
 tr:hover {
-  background: #444444;
+  background: #888888;
   color: #ffffff; }
 
 #form {
