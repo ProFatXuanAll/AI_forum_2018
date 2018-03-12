@@ -6,6 +6,12 @@
 
 html {
   width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
   height: 100%; }
 
 #mainContent {
@@ -21,9 +27,9 @@ hr {
 
 h1 {
   font-weight: 100;
-  font-size: 4rem;
+  font-size: 2rem;
   font-color: #273063;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 1rem; }
   h1 a:link {
     text-decoration: none;
@@ -38,7 +44,7 @@ div {
   div a {
     padding: 0.2rem;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 0.8rem;
     color: #595a5f;
     -o-transition: color 0.2s ease-out, background 0.2s ease-in;
     -ms-transition: color 0.2s ease-out, background 0.2s ease-in;
