@@ -41,4 +41,4 @@ nav {
       text-decoration: none;
       transition: border-bottom .5s; }
       nav li a:hover {
-        border-bottom: 5px solid white; }
+        border-bottom: 3px solid rgba(255, 255, 255, 0.7); }
