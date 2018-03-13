@@ -16,14 +16,39 @@ body {
 
 #mainContent {
   background: linear-gradient(to bottom, #e6e6e6, white, white, white, white);
-  text-align: center;
   width: 100%;
   padding: 5%; }
   #mainContent h1 {
     font-weight: 100;
     font-size: 1rem;
     font-color: #273063;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    text-align: center; }
+  #mainContent h2 {
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: #273063;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem; }
+  #mainContent p {
+    font-size: 0.5rem;
+    font-color: #595a5f;
+    text-align: left; }
+
+#paragraph {
+  width: 80%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-column-gap: 8%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
+section.blk {
+  text-align: left;
+  display: inline-block; }
 
 #map {
   width: 80%;
