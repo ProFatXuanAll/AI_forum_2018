@@ -1,20 +1,21 @@
 const express = require( 'express' );
 const bodyParser = require( 'body-parser' );
 const fs = require( 'fs' );
-const spdy = require( 'spdy' );
+//const spdy = require( 'spdy' );
 
 const config = require( './settings/server/config' );
 const urls = require( './routes/urls' );
 
-const ssl = {
+/*const ssl = {
     key: fs.readFileSync('./key/ssl.key'),
     cert: fs.readFileSync('./key/ssl.cert'),
-};
+};*/
 
 const server = express();
-const http2Server = spdy.createServer( ssl, server );
+//const http2Server = spdy.createServer( ssl, server );
 
-http2Server.listen( config.port );
+//http2Server.listen( config.port );
+server.listen( config.port );
 
 server.set( 'view engine', 'pug' );
 
