@@ -31,7 +31,7 @@ gulp.task( 'sass:watch', function() {
 // nodemon
 gulp.task( 'start', [ 'sass' ], function() {
     nodemon( {
-        ext: 'js pug sass',
+        ext: 'js json pug sass',
         script: 'server.js',
         task: [ 'sass' ],
     } );

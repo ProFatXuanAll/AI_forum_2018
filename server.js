@@ -6,10 +6,10 @@ const fs = require( 'fs' );
 const config = require( './settings/server/config' );
 const urls = require( './routes/urls' );
 
-//const ssl = {
-//    key: fs.readFileSync('./key/ssl.key'),
-//    cert: fs.readFileSync('./key/ssl.cert'),
-//};
+/*const ssl = {
+    key: fs.readFileSync('./key/ssl.key'),
+    cert: fs.readFileSync('./key/ssl.cert'),
+};*/
 
 const server = express();
 //const http2Server = spdy.createServer( ssl, server );
