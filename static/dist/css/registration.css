@@ -74,6 +74,9 @@ section {
     transition: background-color .5s; }
   #form input[type=text]:focus, #form input[type=email]:focus, #form input[type=tel]:focus {
     background-color: #eeeeff; }
+  #form input.invalid {
+    background-color: #ffcaca;
+    border-bottom-color: #e0a9a9; }
   #form input[type=submit] {
     margin-top: 50px;
     width: 50%; }

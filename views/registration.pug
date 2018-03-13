@@ -52,31 +52,34 @@ block content
   section#form
     form(action='' method='post')
       | 您的大名
-      input(type='text' name='firstName' value='' placeholder='名字（First Name）' required)
+      input(id='fname' type='text' name='firstName' value='' placeholder='名字（First Name）' required)
       | 您的姓氏
-      input(type='text' name='lastName' value='' placeholder='姓氏（Last Name）' required)
+      input(id='lname' type='text' name='lastName' value='' placeholder='姓氏（Last Name）' required)
       | 您的電子郵件
-      input(type='email' name='email' value='' placeholder='電子郵件（email）' required)
+      input(id='email' type='email' name='email' value='' placeholder='電子郵件（email）' required)
       | 您的所屬單位
       input(type='text' name='organization' value='' placeholder='單位（Organization）')
       | 您的電話號碼
-      input(type='tel' name='phone' value='' placeholder='電話號碼（Phone Number）' required)
+      input(id='phone' type='tel' name='phone' value='' placeholder='電話號碼（Phone Number）' required)
       | 您的身份
-      select(name='fee')
+      select(id='fee' name='fee')
         option(value='2500') 一般身份，TAAI會員(NT$ 2,500)
         option(value='3500') 一般身份，非TAAI會員(NT$ 3,500)
         option(value='1400') 學生，TAAI會員(NT$ 1,400)
         option(value='1800') 學生，非TAAI會員(NT$ 1800)
-      | 您的TAAI會員編號
-      input(type='text' name='taai' value='' placeholder='TAAI會員編號（TAAI Membership Number）')
+      div#taai
+        | 您的TAAI會員編號
+        input(id='taaiId' type='text' name='taai' value='' placeholder='TAAI會員編號（TAAI Membership Number）')
       | 您的飲食習慣
       select(name='dietary')
         option(value='free') 葷食
         option(value='vegetarian') 素食
       | 備註
       input(type='text' name='memo' value='' placeholder='備註（Memo）')
-      input(type='submit' value='送出')
+      input(id='submitBtn' type='submit' value='送出')
 
 block scripts
   script(src=`${ static }/js/particles.js`)
   script(src=`${ static }/js/index.js`)
+  script(src=`${ static }/js/registration.js`)
+
