@@ -14,8 +14,8 @@ mongoose.connect( dbConfig.url() );
 
 const route = express.Router();
 
-const root_path = serverConfig.root;
-const static_path = serverConfig.static;
+const root_path = serverConfig.url();
+const static_path = serverConfig.staticUrl();
 const urls = {
     root: [
         { cname: '聯絡方式', ename: 'contact', url: '/contact' },
