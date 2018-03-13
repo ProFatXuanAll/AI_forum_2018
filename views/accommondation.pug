@@ -23,9 +23,15 @@ block content
     hr
     h1
       a(href='https://www.shangri-la.com/tc/tainan/fareasternplazashangrila/') 香格里拉遠東國際大飯店
-    img(src=`${ static }/images/accommo_sgrr_ext.jpg` alt='香格里拉外部圖片')
-    img(src=`${ static }/images/accommo_sgrr_dining.jpg` alt='香格里拉晚宴地點圖片')
-    img(src=`${ static }/images/accommo_sgrr_room.jpg` alt='香格里拉房間內部圖片')
+    table(style='margin-left: auto; margin-right: auto; cellspacing:25px')
+      tr(style='width:400px')
+        td(rowspan='2')
+          img(src=`${ static }/images/accommo_sgrr_ext.jpg` alt='香格里拉外部圖片' id='sgrr_ext' style='width:400px; display:block;')
+        td
+          img(src=`${ static }/images/accommo_sgrr_dining.jpg` alt='香格里拉晚宴地點圖片' id='sgrr_dining' style='height:300px; display:block; vertical-align: bottom;')
+      tr(style='width:400px')
+        td
+          img(src=`${ static }/images/accommo_sgrr_room.jpg` alt='香格里拉房間內部圖片' id='sgrr_room' style='height:250px; display:block; vertical-align: bottom;')
     p 訂房單 (reservation form)
       div
         a(href=`${ static }/files/RV_Form_sgrr_ch.pdf`)
