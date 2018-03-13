@@ -9,16 +9,14 @@ fee.addEventListener('change', function() {
         taai.style.display = 'none';
 } );
 
-document.getElementById('submitBtn').addEventListener( 'click', function () {
+document.getElementsByTag('form')[0].addEventListener( 'submit', function (e) {
     
     let ok = checkform();
 
-    console.log(ok);
 	if( ok === true ) {
         if(!confirm('您確定要送出表單嗎？')) return;
     }
     else {
-        console.log("here is alert");
         alert('表單內容有誤，請重新填寫。');
         return;
     }

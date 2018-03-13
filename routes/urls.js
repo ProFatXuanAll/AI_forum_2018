@@ -58,7 +58,9 @@ route.post( '/registration', urlSettings, function( req, res ) {
     } );
     newAttendee.save().then(() => console.log( 'new attendee sign up!')).catch(() => console.log( 'failed to sign up!'))
     console.log( req.body.firstName );
-    res.render( 'success' );
+    res.render( 'success', {
+        name: `${ req.body.firstName } ${ req.body.lastName }`
+    } );
 } );
 
 route.get( '/agenda', urlSettings, function( req, res ) {
