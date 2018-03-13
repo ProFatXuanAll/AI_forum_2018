@@ -63,6 +63,9 @@ section
     @extend %inputField
     &[type=text]:focus, &[type=email]:focus, &[type=tel]:focus
       background-color: #eeeeff
+    &.invalid
+      background-color: #ffcaca
+      border-bottom-color: #e0a9a9
     &[type=submit]
       margin-top: 50px
       width: 50%
@@ -70,3 +73,7 @@ section
     @extend %inputField
     &:focus
       background-color: #eeeeff
+
+
+
+
