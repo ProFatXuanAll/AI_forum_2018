@@ -21,9 +21,24 @@ body {
   .timeline:nth-of-type(2) {
     background: linear-gradient(to bottom, #e6e6e6, white, white, white, white); }
 
+.purpose {
+  margin-top: 3rem; }
+
+.location {
+  text-align: center; }
+
+.conferenceImage {
+  padding: 2rem;
+  margin-right: auto;
+  margin-left: auto; }
+  .conferenceImage img {
+    margin: 15px 15px 15px 15px; }
+
 table {
   max-width: 80%;
-  margin: 50px auto;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   border-collapse: collapse; }
 
@@ -74,3 +89,19 @@ figcaption {
 article {
   font-size: 16px;
   color: #444444; }
+
+.purpose p {
+  margin: 15px 0;
+  color: #888888;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .7rem; }
+
+.location p {
+  margin: 15px 0;
+  color: #888888;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .7rem; }
