@@ -1,14 +1,17 @@
 module.exports = {
-    protocol: 'http://',
-    host: '',
-    reverseProxy: '',
-    port: '',
-    root: '',
-    static: '',
+    protocol: 'http',
+    host: 'localhost',
+    port: '80',
+    root: '/',
+    static: '/',
     url() {
-        return `${ this.protocol }${ this.host }${ this.reverseProxy }${ this.root }`
-    }
+        const port = this.port === '80' ? '' : this.port === '443' ? '' : `:${ this.port }`;
+        const rootPath = this.root === '/' ? '' : this.root;
+        return `${ this.protocol }://${ this.host }${ port }${ rootPath }`
+    },
     staticUrl() {
-        return `${ this.protocol }${ this.host }${ this.reverseProxy }${ this.static }`
-    }
+        const port = this.port === '80' ? '' : this.port === '443' ? '' : `:${ this.port }`;
+        const staticPath = this.static === '/' ? '' : this.static;
+        return `${ this.protocol }://${ this.host }${ port }${ staticPath }`
+    },
 };
