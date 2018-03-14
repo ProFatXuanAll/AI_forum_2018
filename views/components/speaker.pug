@@ -1,0 +1,9 @@
+mixin speaker( imgSrc, imgAlt, cname, ename, content)
+  section(class='speaker')
+    figure
+      img(src=imgSrc alt=imgAlt )
+      figcaption
+        h3= cname
+        p （#{ ename }）
+      article.cont= content
+

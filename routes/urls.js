@@ -14,8 +14,8 @@ mongoose.connect( dbConfig.url() );
 
 const route = express.Router();
 
-const root_path = serverConfig.root;
-const static_path = serverConfig.static;
+const root_path = serverConfig.url();
+const static_path = serverConfig.staticUrl();
 const urls = {
     root: [
         { cname: '聯絡方式', ename: 'contact', url: '/contact' },
@@ -58,7 +58,9 @@ route.post( '/registration', urlSettings, function( req, res ) {
     } );
     newAttendee.save().then(() => console.log( 'new attendee sign up!')).catch(() => console.log( 'failed to sign up!'))
     console.log( req.body.firstName );
-    res.render( 'success' );
+    res.render( 'success', {
+        name: `${ req.body.firstName } ${ req.body.lastName }`
+    } );
 } );
 
 route.get( '/agenda', urlSettings, function( req, res ) {

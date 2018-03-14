@@ -7,9 +7,7 @@ block header
   +navigationBar( 'registration' )
 
 block content
-  section#banner(style='background:black;')
-  section
-    h1 註冊成功！
+  +bannerText('註冊成功！',`感謝 ${ name } 先生/小姐 您的參與！`)
 
 block scripts
   script(src=`${ static }/js/particles.js`)
