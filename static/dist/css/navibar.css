@@ -19,15 +19,17 @@ nav {
   z-index: 999;
   border-bottom: 1px solid #ffffff;
   padding: 0 40px;
+  height: 60px;
   background: transparent;
-  grid-template-columns: repeat(3, 100px) auto repeat(4, 100px);
-  grid-template-areas: "index registration agenda . host accomodation location contact"; }
+  grid-template-columns: 100px 100px 100px auto 120px 100px 100px 100px;
+  grid-template-areas: 'index registration agenda  .  host accomondation location contact';
+  align-items: start; }
   nav a {
-    font-size: 0.5rem;
+    font-size: 0.55rem;
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 5px 10px;
+    padding: 14px 10px 7px;
     text-decoration: none;
     transition: border-bottom .5s; }
     nav a:hover {
