@@ -2,6 +2,7 @@ const express = require( 'express' );
 const bodyParser = require( 'body-parser' );
 const fs = require( 'fs' );
 const spdy = require( 'spdy' );
+const http = require( 'http' );
 
 const config = require( './settings/server/config' );
 const urls = require( './routes/urls' );
@@ -12,12 +13,26 @@ const ssl = {
 };
 
 const server = express();
-const http2Server = spdy.createServer( ssl, server );
+const httpsServer = spdy.createServer( ssl, server );
 
-if( config.protocol === 'http' )
+// http server
+if( config.protocol === 'http' ) {
     server.listen( config.port );
-else if ( config.protocol === 'https' )
-    http2Server.listen( config.port );
+    console.log( `http server start up at port ${ config.port }` );
+}
+// https server
+else if ( config.protocol === 'https' ) {
+    // http redirect to https
+    const httpServer = express();
+    httpServer.set( 'port', 8080 );
+    httpServer.get( '*', function( req, res ) {
+        res.redirect( `https://${ req.headers.host }${ req.url }` );
+    } );
+
+    // http setup
+    httpsServer.listen( config.port );
+    console.log( `https server start up at port ${ config.port }` );
+}
 else
     console.error( 'settings/server/config.js protocol not set!' );
 
