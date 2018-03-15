@@ -6,6 +6,7 @@ const attendeeSchema = mongoose.Schema( {
     "email": String,
     "organization": String,
     "phone": String,
+    "birth": String,
     "fee": Number,
     "taai": String,
     "dietary": String,

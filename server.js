@@ -15,6 +15,24 @@ const ssl = {
 const server = express();
 const httpsServer = spdy.createServer( ssl, server );
 
+server.set( 'view engine', 'pug' );
+
+server.use( bodyParser.json() );
+server.use( bodyParser.urlencoded( { extended: true } ) );
+server.use( config.static, express.static( 'static/dist' ) );
+server.use( config.root, urls );
+
+/* 404 not found */
+server.use( function( req, res, next ) {
+    res.status( 404 ).render( '404' );
+} );
+
+/* 500 error */
+server.use( function( err, req, res, next ) {
+    console.error( err.stack );
+    res.status( 500 ).render( '500' );
+} );
+
 // http server
 if( config.protocol === 'http' ) {
     server.listen( config.port );
@@ -35,10 +53,3 @@ else if ( config.protocol === 'https' ) {
 }
 else
     console.error( 'settings/server/config.js protocol not set!' );
-
-server.set( 'view engine', 'pug' );
-
-server.use( bodyParser.json() );
-server.use( bodyParser.urlencoded( { extended: true } ) );
-server.use( config.static, express.static( 'static/dist' ) );
-server.use( config.root, urls );
