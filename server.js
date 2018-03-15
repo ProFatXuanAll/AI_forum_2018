@@ -24,7 +24,7 @@ if( config.protocol === 'http' ) {
 else if ( config.protocol === 'https' ) {
     // http redirect to https
     const httpServer = express();
-    httpServer.set( 'port', 8080 );
+    httpServer.listen( 8080 );
     httpServer.get( '*', function( req, res ) {
         res.redirect( `https://${ req.headers.host }${ req.url }` );
     } );
