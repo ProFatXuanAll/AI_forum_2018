@@ -54,7 +54,8 @@ body {
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto; }
+    grid-template-rows: auto auto;
+    grid-template-areas: 'logo-title logo-subtitle'; }
     #banner #bannerContent img {
       grid-area: logo; }
     #banner #bannerContent p:nth-child(1) {
