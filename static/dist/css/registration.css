@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
 * {
   padding: 0;
   border: 0;
@@ -13,6 +41,311 @@ html {
 body {
   width: 100%;
   height: 100%; }
+
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px #c9c9ee;
+  padding: 10px auto; }
+
+.clearboth::after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  content: ''; }
+
+.divider {
+  padding: 15px 8%; }
+
+.dividerInner {
+  border-top: 1.8px solid #b2b2dd; }
+
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+footer {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-color: #777777;
+  color: #ffffff; }
+  footer h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px auto; }
+  footer p {
+    margin-left: 40%; }
+  footer span {
+    font-size: .5rem;
+    text-align: center; }
+
+nav {
+  position: relative;
+  display: grid;
+  z-index: 999;
+  border-bottom: 1px solid #ffffff;
+  padding: 0 40px;
+  height: 60px;
+  background: #047b8b;
+  grid-template-columns: 60px 60px 60px auto 120px 100px 100px 100px;
+  grid-template-areas: 'index registration agenda  .  host accomondation location contact';
+  align-items: start; }
+  nav a {
+    font-size: 0.55rem;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 10px 7px;
+    text-decoration: none;
+    transition: border-bottom .5s; }
+    nav a:hover {
+      border-bottom: 3px solid rgba(255, 255, 255, 0.7); }
+    nav a:nth-child(1) {
+      grid-area: index; }
+    nav a:nth-child(2) {
+      grid-area: registration; }
+    nav a:nth-child(3) {
+      grid-area: agenda; }
+    nav a:nth-child(4) {
+      grid-area: host; }
+    nav a:nth-child(5) {
+      grid-area: accomondation; }
+    nav a:nth-child(6) {
+      grid-area: location; }
+    nav a:nth-child(7) {
+      grid-area: contact; }
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background-color: #047b8b; }
+  #banner img {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    opacity: 1; }
+  #banner #bgImg1 {
+    width: 800px;
+    height: 800px;
+    transition: filter .4s;
+    transform: rotate(270deg);
+    top: -500px;
+    left: -470%;
+    z-index: 1;
+    opacity: 0.5; }
+    #banner #bgImg1:hover {
+      filter: invert(100%); }
+  #banner #bgImg2 {
+    width: 800px;
+    height: 800px;
+    transition: filter .4s;
+    transform: rotate(270deg);
+    top: 0;
+    right: -500%;
+    z-index: 1;
+    opacity: 0.5; }
+    #banner #bgImg2:hover {
+      filter: invert(100%); }
+  #banner #bannerContent {
+    color: #ffffff;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    text-align: center;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 120px 80px;
+    grid-template-areas: 'logo title' 'logo subtitle';
+    align-items: center; }
+    #banner #bannerContent img {
+      grid-area: logo; }
+    #banner #bannerContent p:nth-of-type(1) {
+      grid-area: title;
+      z-index: 99;
+      font-size: 2.5rem; }
+    #banner #bannerContent span {
+      color: #00a0e7;
+      z-index: 99; }
+    #banner #bannerContent p:nth-of-type(2) {
+      grid-area: subtitle;
+      z-index: 99;
+      font-size: .8rem; }
 
 #mainContent {
   background: linear-gradient(to bottom, #e6e6e6, white, white, white, white);
@@ -48,15 +381,12 @@ tr:hover {
   background: #888888;
   color: #ffffff; }
 
-section {
-  padding: 5%; }
-
 #form {
   border-top: solid 7px #999999;
   font-size: .8rem;
   background-color: #e3e3e3;
   max-width: 1000px;
-  margin: 0 auto 5% auto;
+  margin: 5% auto;
   text-align: center;
   border-radius: 10px;
   padding: 30px; }

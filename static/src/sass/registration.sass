@@ -1,4 +1,10 @@
 @import components/reset
+@import components/navibar
+@import components/banner
+@import components/title
+@import components/footer
++navibar(#047b8b)
++banner(#047b8b, #00a0e7)
 
 #mainContent
   background: linear-gradient(to bottom, darken(white, 10%), white, white, white, white)
@@ -34,15 +40,12 @@ tr:hover
   background: #888888
   color: #ffffff
 
-section
-  padding: 5%
-
 #form
   border-top: solid 7px #999999
   font-size: .8rem
   background-color: #e3e3e3
   max-width: 1000px
-  margin: 0 auto 5% auto
+  margin: 5% auto
   text-align: center
   border-radius: 10px
   padding: 30px
@@ -73,7 +76,3 @@ section
     @extend %inputField
     &:focus
       background-color: #eeeeff
-
-
-
-

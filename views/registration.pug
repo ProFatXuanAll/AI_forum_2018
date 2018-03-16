@@ -6,7 +6,7 @@ block css
 block header
 
 block content
-  +bannerText('線上報名', '早鳥優惠進行中')
+  +banner
   section#mainContent
     +title('報名費用')
     table
@@ -109,7 +109,7 @@ block content
       input(id='submitBtn' type='submit' value='送出')
 
 block scripts
-  script(src=`${ static }/js/particles.js`)
-  script(src=`${ static }/js/index.js`)
+  //script(src=`${ static }/js/particles.js`)
+  //script(src=`${ static }/js/index.js`)
   script(src=`${ static }/js/registration.js`)
 
