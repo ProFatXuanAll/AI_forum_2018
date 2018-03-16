@@ -1,0 +1,11 @@
+@mixin title( $color, $child )
+  h1.title:nth-of-type( #{ $child } )
+    text-align: center
+    color: $color
+  hr.title:nth-of-type( #{ $child } )
+    text-align: center
+    color: $color
+    border-top: 2px solid $color
+    width: 70%
+    height: 1%
+    margin: 0 auto
