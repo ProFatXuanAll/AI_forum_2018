@@ -36,50 +36,55 @@ const urlSettings = ( req, res, next ) => {
     next();
 };
 
-route.get( '/', urlSettings, function( req, res ) {
+route.get( '/', urlSettings, function( req, res, next ) {
     res.render( 'index' );
 } );
 
-route.get( '/registration', urlSettings, function( req, res ) {
+route.get( '/registration', urlSettings, function( req, res, next ) {
     res.render( 'registration' );
 } );
 
-route.post( '/registration', urlSettings, function( req, res ) {
+route.post( '/registration', urlSettings, function( req, res, next ) {
     let newAttendee = new Attendee( {
        firstName: req.body.firstName,
        lastName: req.body.lastName,
        email: req.body.email,
        organization: req.body.organization,
        phone: req.body.phone,
+       birth: req.body.birth,
        fee: req.body.fee,
        taai: req.body.taai,
        dietary: req.body.dietary,
        memo: req.body.memo
     } );
-    newAttendee.save().then(() => console.log( 'new attendee sign up!')).catch(() => console.log( 'failed to sign up!'))
-    console.log( req.body.firstName );
+    newAttendee.save()
+        .then( () => console.log( 'new attendee sign up!' ) )
+        .catch( () => console.log( 'failed to sign up!' ) );
+    console.log( req.body );
     res.render( 'success', {
-        name: `${ req.body.firstName } ${ req.body.lastName }`
+        name: `${ req.body.firstName } ${ req.body.lastName }`,
+        birth: req.body.birth,
+        fee: req.body.fee,
     } );
 } );
 
-route.get( '/agenda', urlSettings, function( req, res ) {
+route.get( '/agenda', urlSettings, function( req, res, next ) {
     res.render( 'agenda' );
 } );
 
-route.get( '/location', urlSettings, function( req, res ) {
+route.get( '/location', urlSettings, function( req, res, next ) {
     res.render( 'location' );
 } );
 
-route.get( '/accommondation', urlSettings, function( req, res ) {
+route.get( '/accommondation', urlSettings, function( req, res, next ) {
     res.render( 'accommondation' );
 } );
 
-route.get( '/contact', urlSettings, function( req, res ) {
+route.get( '/contact', urlSettings, function( req, res, next ) {
     res.render( 'contact' );
 } );
 
-route.get( '/host', urlSettings, function( req, res ) {
+route.get( '/host', urlSettings, function( req, res, next ) {
     res.render( 'host' );
 } );
 
