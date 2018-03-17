@@ -184,20 +184,45 @@ nav {
 header#top {
   background-color: #f4b307;
   width: 100%;
-  height: 100%; }
-  header#top div.trim {
+  height: 100%;
+  overflow: hidden; }
+  header#top div.bgImageArea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     position: absolute;
-    opacity: 0.3;
-    overflow: hidden; }
-  header#top div#blackTreeTopLeft {
-    margin-left: -40%;
-    margin-top: -40%; }
-  header#top div#blackTreeTopRight {
-    margin-left: 70%;
-    margin-top: -35%; }
-  header#top div#blackTreeBottomRight {
-    margin-left: 35%;
-    margin-top: 15%; }
+    z-index: 0; }
+    header#top div.bgImageArea img {
+      position: absolute; }
+      header#top div.bgImageArea img.bgImage {
+        opacity: 0.3; }
+        header#top div.bgImageArea img.bgImage:hover {
+          filter: invert(100%); }
+      header#top div.bgImageArea img#blackTreeTopLeft {
+        margin-left: -37%;
+        margin-top: -40%;
+        transform: rotate(270deg); }
+      header#top div.bgImageArea img#blackTreeTopRight {
+        margin-left: 70%;
+        margin-top: -42%;
+        transform: rotate(270deg); }
+      header#top div.bgImageArea img#blackTreeBottomRight {
+        margin-left: 30%;
+        margin-top: 22%;
+        transform: rotate(270deg); }
+      header#top div.bgImageArea img#blackTreeBottomRightMost {
+        margin-left: 72%;
+        margin-top: 25%; }
+      header#top div.bgImageArea img.robotImage {
+        z-index: 1;
+        width: 583px;
+        height: auto; }
+      header#top div.bgImageArea img#robotLeft {
+        margin-left: -16%;
+        margin-top: 15%; }
+      header#top div.bgImageArea img#robotRight {
+        margin-left: 84%;
+        margin-top: 1%; }
   header#top div.image {
     text-align: center; }
     header#top div.image img.whiteTreeLogo {
@@ -222,6 +247,26 @@ header#top {
       font-weight: lighter;
       word-spacing: .7rem;
       transform: scaleY(1.05); }
+  header#top div.buttonApplyArea button {
+    border: .15rem solid #eb5a5a;
+    border-bottom-left-radius: 2rem 100%;
+    border-bottom-right-radius: 2rem 100%;
+    border-top-right-radius: 2rem 100%;
+    border-top-left-radius: 2rem 100%;
+    background: rgba(235, 90, 90, 0);
+    color: #eb5a5a;
+    width: 9rem;
+    height: 2rem;
+    margin-top: 2rem;
+    margin-left: 30%;
+    font-size: .7rem;
+    transform: scaleY(1.05);
+    word-spacing: .7rem;
+    transition: 0.4s;
+    z-index: 2; }
+    header#top div.buttonApplyArea button:hover {
+      background: #eb5a5a;
+      color: #f5f5f5; }
 
 section:nth-of-type(1) {
   background-color: #ffffff;

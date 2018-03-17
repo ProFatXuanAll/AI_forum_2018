@@ -9,12 +9,13 @@ block content
   include components/title.pug
   +naviBar
   header#top
-    div.trim(id='blackTreeTopLeft')
-      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
-    div.trim(id='blackTreeTopRight')
-      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
-    div.trim(id='blackTreeBottomRight')
-      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
+    div.bgImageArea
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeTopLeft')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeTopRight')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeBottomRight')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeBottomRightMost')
+      img(src=`${ static }/images/index_robot.svg` class='robotImage' id='robotLeft')
+      img(src=`${ static }/images/index_robot.svg` class='robotImage' id='robotRight')
     div.image
       img.whiteTreeLogo(src=`${ static }/images/logo_tree_white.png`)
     div.head
