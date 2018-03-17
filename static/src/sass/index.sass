@@ -3,6 +3,7 @@
 @import components/staticPath
 @import components/navibar
 @import components/title
+@import components/speaker
 @import components/footer
 +navibar(#f4b307)
 
@@ -116,26 +117,27 @@ header
 +sectionSetup( #ffffff, 100%, 90%, 1 )
 section:nth-of-type(1)
   background-image: linear-gradient( to bottom, rgba( 255, 255, 255, .95), rgba( 255, 255, 255, .95) ), url( "#{ $staticPath }/images/logoBlackBig.png" )
-  background-size: 100% 100%, 60vw 60vw
+  background-size: 100% 100%, 84vh 70vh
   background-repeat: repeat, no-repeat
-  background-position: 0% 0%, right bottom
+  background-position: 0% 0%, 95% 90%
   
   +title( #047b8b, 1 )
 
-  //&::after
-    //content: ""
-    //opacity: 0.5
-    //z-index: -1
-
+  // section content
   article
     
     h1
+      margin-top: 3%
       color: #047b8b
       font-size: 20pt
     
     p
+      margin-top: 2%
       color: #707070
-      font-size: 10pt
+      font-size: 15pt
+
+      &:nth-of-type(1)
+        margin-top: 3%
 // ========================================
 
 // ========================================
@@ -143,6 +145,23 @@ section:nth-of-type(1)
 +sectionSetup( #047b8b, 100%, 90%, 2 )
 section:nth-of-type(2)
   +title( #ffffff, 1 )
+
+  article
+    padding: 5%
+    display: grid
+    grid-template-columns: repeat( auto-fill, minmax( 334px, 1fr ) )
+    grid-column-gap: 6%
+    +speaker
+
+    figure
+      justify-self: center
+
+    h1, h2
+      text-align: center
+
+    //figure:nth-of-type(1)
+    //  gird
+
 // ========================================
 
 // ========================================
@@ -187,3 +206,5 @@ section:nth-of-type(8)
   
   +title( #047b8b, 1 )
 // ========================================
+
++footer(#047b8b)
