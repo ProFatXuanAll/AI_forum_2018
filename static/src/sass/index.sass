@@ -1,28 +1,84 @@
 @import components/reset
+@import components/section
+@import components/staticPath
 @import components/navibar
 @import components/title
 @import components/footer
 +navibar(#f4b307)
 
-#mainContent
-  background: linear-gradient(to bottom, darken(white, 10%), white, white, white, white)
-  padding: 8%
+// ========================================
+// section 1, color #ffffff
++sectionSetup( #ffffff, 100%, 90%, 1 )
+section:nth-of-type(1)
+  background-image: linear-gradient( to bottom, rgba( 255, 255, 255, .95), rgba( 255, 255, 255, .95) ), url( "#{ $staticPath }/images/logoBlackBig.png" )
+  background-size: 100% 100%, 60vw 60vw
+  background-repeat: repeat, no-repeat
+  background-position: 0% 0%, right bottom
+  
+  +title( #047b8b, 1 )
 
-  article, figure
-    width: 50%
-    float: left
+  //&::after
+    //content: ""
+    //opacity: 0.5
+    //z-index: -1
+
   article
-    margin-left: auto
-    margin-right: auto
-    font-size: .7rem
-    line-height: 1.8
+    
+    h1
+      color: #047b8b
+      font-size: 20pt
+    
     p
-      margin: 15px 0
-      color: #888888
-  img
-    height: 80%
-    width: 80%
-  &::after
-    content: ''
-    clear: both
-    display: table
+      color: #707070
+      font-size: 10pt
+// ========================================
+
+// ========================================
+// section 2, color #047b8b
++sectionSetup( #047b8b, 100%, 90%, 2 )
+section:nth-of-type(2)
+  +title( #ffffff, 1 )
+// ========================================
+
+// ========================================
+// section 3, color #eb5a5a
++sectionSetup( #eb5a5a, 100%, 90%, 3 )
+section:nth-of-type(3)
+  +title( #ffffff, 1 )
+// ========================================
+
+// ========================================
+// section 4, color #f4b307
++sectionSetup( #f4b307, 100%, 90%, 4 )
+section:nth-of-type(4)
+  +title( #ffffff, 1 )
+// ========================================
+
+// ========================================
+// section 5, color #707070
++sectionSetup( #707070, 100%, 90%, 5 )
+section:nth-of-type(5)
+  +title( #ffffff, 1 )
+// ========================================
+
+// ========================================
+// section 6, color #ffffff
++sectionSetup( #ffffff, 100%, 90%, 6 )
+section:nth-of-type(6)
+  +title( #047b8b, 1 )
+// ========================================
+
+// ========================================
+// section 7, color #ffffff
++sectionSetup( #ffffff, 100%, 90%, 7 )
+section:nth-of-type(7)
+  +title( #047b8b, 1 )
+// ========================================
+
+// ========================================
+// section 8, color #bfc4c7
++sectionSetup( #bfc4c7, 100%, 90%, 8 )
+section:nth-of-type(8)
+  
+  +title( #047b8b, 1 )
+// ========================================
