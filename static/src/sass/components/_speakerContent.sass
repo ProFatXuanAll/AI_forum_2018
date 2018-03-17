@@ -1,0 +1,48 @@
+@import reset
+
+@mixin speakerContent
+  #speaker
+    width: 100%
+    height: auto
+    h1
+      font-size: 1rem
+      font-weight: bold
+      color: #0e0e0e
+      line-height: 1.5rem
+      &#headerTitle
+        margin-top: 4%
+        margin-bottom: 2%
+    p
+      font-size: .6rem
+      font-weight: lighter
+      color: #0e0e0e
+      line-height: .9rem
+    img
+      border-radius: 50%
+      border: .1rem solid #047b8b
+      padding: 7%
+      max-width: 10rem
+    hr
+      background-color: #0e0e0e
+      opacity: 0.5
+      width: 100%
+      height: 2px
+      display: block
+      clear: both
+      margin-top: 3%
+      margin-bottom: 5%
+      margin-left: auto
+      margin-right: auto
+    div
+      &.gridContainer
+        text-align: left
+        margin-top: 10%
+        margin-bottom: 20%
+        margin-left: auto
+        margin-right: auto
+        display: grid
+        grid-template-columns: 55% 12%
+        justify-content: center
+        grid-gap: 3rem
+        align-items: top
+

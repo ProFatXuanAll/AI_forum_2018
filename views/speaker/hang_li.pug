@@ -3,8 +3,15 @@ extends ../layouts/base.pug
 block css
 
 block header
+  link(rel='stylesheet' href=`${ static }/css/hai_xun_wang.css`)
 
 block content
-  p hang li
+  include ../components/speakerContent.pug
+  +banner
+  +speakerContent('李航 主任', 'Prof. Hang Li', 'Machines That Act Rationally', 'Abstract', 'According to Stuart Russell and Peter Norvig, Artificial Intelligence (AI) is a field in science and engineering about building intelligent machines, and there are four possible definitions on intelligent machines, namely machines thinking humanly, machines acting humanly, machines thinking rationally, and machines acting rationally. In this talk, I will discuss several issues with regard to building machines that act rationally (MAR). I will first summarize the main characteristics of MAR. After that, I will introduce several recent work in neuroscience and cognitive science on how humans behave rationally. Next, I will discuss how to build MAR using AI particularly machine learning technologies. Finally, I will introduce one of our recent work on paraphrase generation in natural language processing using deep reinforcement learning, which can be viewed as an example of building MAR. In the work, we let the system to learn not only how to act rationally (to generate good paraphrases), but also how to evaluate rationality (evaluate good paraphrases).', '', '', '', '', `${ static }/images/speaker_hang_lee.jpg`, 'Prof. Hang Li')
 
 block scripts
+
+
+
+
