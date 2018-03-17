@@ -7,6 +7,7 @@
 +navibar(#047b8b)
 +banner(#047b8b, #00a0e7)
 
++title(#047b8b, 0)
 #mainContent
   background: linear-gradient(to bottom, darken(white, 10%), white, white, white, white)
   text-align: center
@@ -15,21 +16,23 @@
 
   div
     &.gridContainer
+      width: 65%
       text-align: center
-      margin-top: 1.5rem
-      margin-bottom: 2rem
+      margin-top: 2rem
+      margin-bottom: 1rem
       margin-left: auto
       margin-right: auto
       display: grid
-      grid-template-columns: 20rem 10rem
+      grid-template-columns: auto auto
       justify-content: space-around
+      align-items: center
       div
         &.leftColumn
             border: .1rem solid #eb5a5a
             border-radius: 1rem
             padding: 1rem
         p
-          color: #047bbb
+          color: #047b8b
           font-weight: bold
           font-size: .8rem
           line-height: 1.3rem
@@ -38,33 +41,57 @@
       div
         &.rightColumn
           +button
-table
-  max-width: 80%
-  margin: 50px auto
-  text-align: center
-  border-collapse: collapse
 
-th, tr, td
-  margin: 0 auto
-  font-size: .7rem
-  padding: 10px 8px
++title(#047b8b, 1)
+#instruction
+  width: 75%
+  margin-left: auto
+  margin-right: auto
+  h2
+    margin-top: 2rem
+    font-size: .8rem
+    color: #047b8b
+    font-weight: bold
+  ol
+    margin-top: 1rem
+    font-size: .6rem
+    color: #0e0e0e
+    font-weight: lighter
+  table
+    max-width: 85%
+    margin: 50px auto
+    text-align: center
+    border-collapse: collapse
+    font-weight: lighter
 
-th
-  min-width: 180px
-  background: #666666
-  color: #eeeeee
+  th, tr, td
+    margin: 0 auto
+    font-size: .7rem
+    padding: 10px 8px
+    font-weight: lighter
 
-tr:nth-of-type(even)
-  background: rgba(0,0,0,.02)
-  color: #888888
+  span
+    font-weight: lighter
+    color: #bfc4c7
 
-tr:nth-of-type(odd)
-  background: rgba(0,0,0,.04)
-  color: #888888
+  th
+    min-width: 180px
+    background: #f5f5f5
+    color: #0e0e0e
 
-tr:hover
-  background: #888888
-  color: #ffffff
+  tr:nth-of-type(even)
+    background: #fafafa
+    color: #0e0e0e
+
+  tr:nth-of-type(odd)
+    background: #f5f5f5
+    color: #0e0e0e
+
+  tr:hover
+    background: #888888
+    color: #ffffff
+
++title(#047b8b, 2)
 
 #form
   border-top: solid 7px #999999
