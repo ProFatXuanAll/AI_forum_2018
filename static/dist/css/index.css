@@ -180,7 +180,7 @@ header#top {
     header#top div.bgImageArea img {
       position: absolute; }
       header#top div.bgImageArea img.bgImage {
-        opacity: 0.3; }
+        opacity: 0.15; }
         header#top div.bgImageArea img.bgImage:hover {
           filter: invert(100%); }
       header#top div.bgImageArea img#blackTreeTopLeft {
