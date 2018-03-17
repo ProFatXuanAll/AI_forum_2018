@@ -10,13 +10,24 @@ block content
   include components/speaker.pug
   +banner
   section.purpose
-    +title('會議目的')
-    p &emsp;&emsp;近年來，人工智慧已經越來越深入的浸透到人類社會中。在我們的生活品質被不斷改善的同時，面對這波鋪天蓋地般的突飛猛進，人們對人工智慧的恐懼和憂慮也隨之而生。另一方面，同樣面對高齡少子化問題的台灣與日本社會，有著太多共通的課題；多年來也都在人工智慧研究上投注了大量的能量、孕育出許多成果。對於這樣的台灣與日本社會來說：如何將進化再進化的人工智慧，與人類社會、生活成功的結合，絕對會成為決定兩個社會未來生存的關鍵。本屆 2018人工智慧論壇，邀請到國內外的知名傑出學者發表精彩的演講。主題將包括：專題論壇則是邀請到趨勢科技、與 Appier 等知名廠 商共同舉辦，討論學術界與產業界如何能夠緊密結合，共同發揮人工智慧技術的 最大效益。
+    div
+      +title('會議議程')
+    div
+      h3 會議目標
+      p &emsp;&emsp;近年來，人工智慧已經越來越深入的浸透到人類社會中。在我們的生活品質被不斷改善的同時，面對這波鋪天蓋地般的突飛猛進，人們對人工智慧的恐懼和憂慮也隨之而生。另一方面，同樣面對高齡少子化問題的台灣與日本社會，有著太多共通的課題；多年來也都在人工智慧研究上投注了大量的能量、孕育出許多成果。對於這樣的台灣與日本社會來說：如何將進化再進化的人工智慧，與人類社會、生活成功的結合，絕對會成為決定兩個社會未來生存的關鍵。本屆2018人工智慧論壇，邀請到國內外的知名傑出學者發表精彩的演講。主題將包括：專題論壇則是邀請到趨勢科技、與 Appier 等知名廠商共同舉辦，討論學術界與產業界如何能夠緊密結合，共同發揮人工智慧技術的最大效益。
+    div
+      p
+        span MAY
+        span  04,2018
+      p |
+      p
+        span MAY 
+        span  05,2018
+
   section.timeline
     +title('會議流程')
+    h3 MAY 04,2018 (Friday)
     table
-      tr
-        th(colspan='2') May 4 (Friday)
       tr
         th Time
         th Event
@@ -28,9 +39,8 @@ block content
         td Opening
       tr
         td 13:30 - 14:30
-        td Keynote I:
-          br
-          | "NLP for Short Text Understanding"
+        td 
+          strong Keynote I:  "NLP for Short Text Understanding"
           br 
           | Dr. Haixun Wang,
           br
@@ -40,9 +50,8 @@ block content
         td Short Break
       tr
         td 14:45 - 15:45
-        td Keynote II:
-          br
-          | "AI in Singapore"
+        td
+          strong Keynote II: "AI in Singapore"
           br
           | Prof. Lim Ee Peng
           br
@@ -54,29 +63,31 @@ block content
         td Coffee Break
       tr
         td 16:00 - 17:30
-        td Panel Discussion
+        td
+          strong Panel Discussion
           br
           | Gape between Research and Industry for AI
       tr
         td 17:30 - 19:00
         td Banquet
-      tr
-        th(colspan='2') May 5 (Saturday)
+
+    h3 MAY 05,2018 (Saturday)
+    table
       tr
         th Time
         th Event
       tr
         td 9:00 - 10:00
-        td Keynote III:
-          br
-          | "Big Data Analytics (tentative)"
+        td
+          strong Keynote III: "Big Data Analytics (tentative)"
           br
           | Prof. Hang Li
           br
           | CTO, Toutiao
       tr
         td 10:00 - 11:00
-        td Special Session: Industrial Insight
+        td
+          strong Special Session: Industrial Insight
           br
           | TBA
       tr
@@ -84,12 +95,14 @@ block content
         td Coffee Break
       tr
         td 11:15 - 12:15
-        td Special Session: Ph.D. Moonshoot
+        td
+          strong Special Session: Ph.D. Moonshoot
           br
           | Innovative Work from Fresh AI Ph.D. students
       tr
         td 12:15 - 13:30
         td End
+
   section#speakers
     +speaker(`${ static }/images/speaker_hang_lee.jpg`, '李航(Hang Li) 主任', '李航 主任', 'Prof. Hang Li', `${ root }/agenda/hang_li`)
     // '今日頭條實驗室主任，曾任華爲諾亞方舟實驗室主任；1990-2001年，供職於NEC公司研究實驗室；2001-2012年，在微軟亞洲研究院工作；其研究領域包括信息檢索、自然語言處理、統計機器學習和數據挖掘。'
@@ -98,18 +111,8 @@ block content
     +speaker(`${ static }/images/speaker_hai_xun_wang.jpg`, '王海勳(Haixun Wang) 博士', '王海勳 博士', 'Dr. Haixun Wang', `${ root }/agenda/hai_xun_wang`)
     // '王海勳博士現任亞馬遜NLP集團董事。在加入亞馬遜之前，曾在Google、微軟亞洲，IBM Research（沃森）工作過。王博士研究領域為文字分析Text Analytics, 自然語言處理，知識庫建構與語意網路，Artificial Intelligence等。王博士曾得過ICDE 2015年的最佳論文獎，在2014年得到ICDM 10 Year Highest Impact Paper Award，在微軟研究院時，王博士建構出一個語料知識庫Probase (a data driven semantic network for text understanding)，也是在文字處理上相當重要的一個語料庫。' )
     +speaker( `${ static }/images/speaker_yin_hsi_kuo.jpg`, '郭盈希', '郭盈希 博士', 'Dr. Yin hsi Kuo', `${ root }/agenda/yin_hsi_kuo` )
-  section#modal
-    span#close x
-    img#icon
-    article#description
-      h1.header
-      div.clearboth
-      div.divider
-        div.dividerInner
-      p#career
-
 
 block scripts
   //script(src=`${ static }/js/particles.js`)
   //script(src=`${ static }/js/index.js`)
-  script(src=`${ static }/js/agenda.js`)
+  //script(src=`${ static }/js/agenda.js`)
