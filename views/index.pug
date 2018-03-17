@@ -8,7 +8,24 @@ block header
 block content
   include components/title.pug
   include components/speaker.pug
+  include components/button.pug
   +naviBar
+  header#top
+    div.bgImageArea
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeTopLeft')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeTopRight')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeBottomRight')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage' id='blackTreeBottomRightMost')
+      img(src=`${ static }/images/index_robot.svg` class='robotImage' id='robotLeft')
+      img(src=`${ static }/images/index_robot.svg` class='robotImage' id='robotRight')
+    div.image
+      img.whiteTreeLogo(src=`${ static }/images/logo_tree_white.png`)
+    div.head
+      h1 AI Forum&emsp;
+        span 2018
+      h2 artificial intelligence forum in NCKU
+    div.buttonApplyArea
+      button APPLY NOW
   header
   section
     +title( '關於' )
@@ -20,24 +37,26 @@ block content
   section
     +title( 'Keynote Speakers' )
     article
-      +speaker( `${ static }/images/speaker_hang_lee.jpg`, '李航', '李航 主任', 'Prof. Hang Li', '' )
-      +speaker( `${ static }/images/speaker_lim_ee_peng.jpg`, '林一平', '林一平 教授', 'Prof. Ee Peng Lim', '' )
-      +speaker( `${ static }/images/speaker_haixun_wang.jpg`, '王海勳', '王海勳 博士', 'Dr. Haixun Wang', '' )
+      +speaker( `${ static }/images/speaker_hang_lee.jpg`, '李航', '李航 主任', 'Prof. Hang Li', `${ root }/agenda/hang_li` )
+      +speaker( `${ static }/images/speaker_ee_peng_lim.jpg`, '林一平', '林一平 教授', 'Prof. Ee Peng Lim', `${ root }/agenda/ee_peng_lim` )
+      +speaker( `${ static }/images/speaker_hai_xun_wang.jpg`, '王海勳', '王海勳 博士', 'Dr. Hai xun Wang', `${ root }/agenda/hai_xun_wang` )
   section
     +title( 'Keynote Speakers' )
     article
+      +speaker( `${ static }/images/speaker_yin_hsi_kuo.jpg`, '郭盈希', '郭盈希 博士', 'Dr. Yin hsi Kuo', `${ root }/agenda/yin_hsi_kuo` )
+      +speaker( `${ static }/images/speaker_yu_ru_lin.jpg`, 'Yu Ru Lin', 'Prof. Yu Ru Lin', '', `${ root }/agenda/yu_ru_lin` )
   section
     +title( 'Keynote Speakers' )
   section
     +title( 'Keynote Speakers' )
   section
-    +title( '報名' )
-  section
-    +title( '費用' )
+    +title( '報名 & 費用' )
+    +button( 'APPLY NOW', `${ root }/registration` )
   section
     +title( '會議地點' )
-  //section#mainContent
-  //  figure
-  //    img(src=`${ static }/images/logoBlackBig.png`)
+  section
+    +title( '關於' )
 
 block scripts
+  script(src=`${ static }/js/googleMap.js`)
+  //script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqat2GqcAiq50z532bofCqOdTwH6LnwsI&callback=initMap')

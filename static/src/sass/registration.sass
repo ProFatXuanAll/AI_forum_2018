@@ -3,6 +3,7 @@
 @import components/banner
 @import components/title
 @import components/footer
+@import components/button
 +navibar(#047b8b)
 +banner(#047b8b, #00a0e7)
 
@@ -12,6 +13,32 @@
   width: 100%
   padding: 5%
 
+  div
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    &.gridContainer
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+      display: grid
+      grid-gap: 1.5rem
+      grid-template-columns: 25rem 10rem
+      div
+        &.leftColumn
+            border: .1rem solid #eb5a5a
+            border-radius: 1rem
+            padding: 2rem
+        p
+          color: #047bbb
+          font-weight: bold
+          font-size: .8rem
+          line-height: 1.3rem
+          span
+            color: #eb5a5a
+      div
+        &.rightColumn
+          +button
 table
   max-width: 80%
   margin: 50px auto

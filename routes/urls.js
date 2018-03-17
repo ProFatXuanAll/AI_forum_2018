@@ -4,6 +4,7 @@ const mongoose = require( 'mongoose' );
 const serverConfig = require( '../settings/server/config' );
 const dbConfig = require( '../settings/database/config' );
 const Attendee = require( '../models/attendee' );
+const agenda = require( './agenda' );
 
 const db = mongoose.connection;
 db.on( 'error', console.error.bind( console, 'connection error:' ) );
@@ -12,39 +13,26 @@ db.once( 'open', () => {
 } );
 mongoose.connect( dbConfig.url() );
 
-const route = express.Router();
+const router = express.Router();
 
 const root_path = serverConfig.url();
 const static_path = serverConfig.staticUrl();
-const urls = {
-    root: [
-        { cname: '聯絡方式', ename: 'contact', url: '/contact' },
-        { cname: '交通資訊', ename: 'location', url: '/location' },
-        { cname: '住宿資訊', ename: 'accommondation', url: '/accommondation' },
-        { cname: '主協辦單位', ename: 'host', url: '/host' },
-        { cname: '議程', ename: 'agenda', url: '/agenda' },
-        { cname: '報名', ename: 'registration', url: '/registration' },
-        { cname: '首頁', ename: 'home', url: '/' },
-    ],
-}
-
-urls.root.forEach( function( obj ) { obj.url = `${ root_path }${ obj.url }`} )
 
 const urlSettings = ( req, res, next ) => {
-    res.locals = { root: urls.root };
+    res.locals.root = root_path;
     res.locals.static = static_path;
     next();
 };
 
-route.get( '/', urlSettings, function( req, res, next ) {
+router.get( '/', urlSettings, function( req, res, next ) {
     res.render( 'index' );
 } );
 
-route.get( '/registration', urlSettings, function( req, res, next ) {
+router.get( '/registration', urlSettings, function( req, res, next ) {
     res.render( 'registration' );
 } );
 
-route.post( '/registration', urlSettings, function( req, res, next ) {
+router.post( '/registration', urlSettings, function( req, res, next ) {
     let newAttendee = new Attendee( {
        firstName: req.body.firstName,
        lastName: req.body.lastName,
@@ -68,24 +56,22 @@ route.post( '/registration', urlSettings, function( req, res, next ) {
     } );
 } );
 
-route.get( '/agenda', urlSettings, function( req, res, next ) {
-    res.render( 'agenda' );
-} );
+router.use( '/agenda', urlSettings, agenda );
 
-route.get( '/location', urlSettings, function( req, res, next ) {
+router.get( '/location', urlSettings, function( req, res, next ) {
     res.render( 'location' );
 } );
 
-route.get( '/accommondation', urlSettings, function( req, res, next ) {
+router.get( '/accommondation', urlSettings, function( req, res, next ) {
     res.render( 'accommondation' );
 } );
 
-route.get( '/contact', urlSettings, function( req, res, next ) {
+router.get( '/contact', urlSettings, function( req, res, next ) {
     res.render( 'contact' );
 } );
 
-route.get( '/host', urlSettings, function( req, res, next ) {
+router.get( '/host', urlSettings, function( req, res, next ) {
     res.render( 'host' );
 } );
 
-module.exports = route;
+module.exports = router;
