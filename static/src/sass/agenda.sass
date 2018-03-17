@@ -1,8 +1,10 @@
 @import components/reset
 @import components/navibar
 @import components/banner
+@import components/speaker
 @import components/title
 @import components/footer
+
 +navibar(#707070)
 +banner(#707070, #00a0e7)
 
@@ -85,35 +87,49 @@ h3
 
 #speakers
   width: 100%
-  padding: 8%
-  display: grid
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
-  grid-column-gap: 8%
 
-figure
-  text-align: center
-  display: block
-  margin: 0 auto
-  
-  img
-    cursor: pointer
-    width: 200px
-    height: 200px
-    border-radius: 50%
-    transition: opacity .1s
-    &:hover
-      opacity: 0.7
+  +title( #047b8b, 1 )
 
-figcaption
-  font-size: 24px
-  margin-bottom: 10px 
+  article
+    padding: 5%
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(334px, 1fr))
+    grid-column-gap: 8%
+    +speaker
 
-  h3
-    font-weight: 700
-    font-size: 1rem
+    figure
+      justify-self: center
+      margin-bottom: 5%
 
-article
-  font-size: 16px
-  color: #444444
+      &:hover
+        img
+          opacity: 0.5
+
+    figcaption
+      
+      h1, h2
+        text-align: center
+        color: #000000
+        padding: 0
+
+  /*figure
+    text-align: center
+    display: block
+    margin: 0 auto
+    
+    img
+      cursor: pointer
+      width: 200px
+      height: 200px
+      border-radius: 50%
+      transition: opacity .1s
+      &:hover
+        opacity: 0.7
+
+    figcaption
+
+      h1, h2
+      font-size: 24px
+      margin-bottom: 10px */
 
 +footer(#707070)

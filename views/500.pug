@@ -1,12 +1,15 @@
 extends layouts/base.pug
 
 block css
-  link(rel='stylesheet' type='text/css' href=`${ static }/css/index.css`)
+  link(rel='stylesheet' type='text/css' href=`${ static }/css/500.css`)
 
 block header
+  +banner
 
 block content
-  h1 500 internal server error
+  include components/title.pug
+  section
+    +title( '500 internal server error' )
 
 block scripts
   script(src=`${ static }/js/particles.js`)

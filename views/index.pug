@@ -19,13 +19,14 @@ block content
       img(src=`${ static }/images/index_robot.svg` class='robotImage' id='robotLeft')
       img(src=`${ static }/images/index_robot.svg` class='robotImage' id='robotRight')
     div.image
-      img.whiteTreeLogo(src=`${ static }/images/logo_tree_white.png`)
+      img.whiteTreeLogo(src=`${ static }/images/logoWhiteBig.png`)
     div.head
-      h1 AI Forum&emsp;
+      h1 AI Forum 
         span 2018
       h2 artificial intelligence forum in NCKU
     div.buttonApplyArea
-      button APPLY NOW
+      button
+        a(href=`${ root }/registration`) APPLY NOW
   header
   section
     +title( '關於' )

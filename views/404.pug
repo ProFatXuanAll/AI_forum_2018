@@ -1,12 +1,15 @@
 extends layouts/base.pug
 
 block css
-  link(rel='stylesheet' type='text/css' href=`${ static }/css/index.css`)
+  link(rel='stylesheet' type='text/css' href=`${ static }/css/404.css`)
 
 block header
+  +banner
 
 block content
-  h1 404 not found
+  include components/title.pug
+  section
+    +title( '404 not found' )
 
 block scripts
   script(src=`${ static }/js/particles.js`)

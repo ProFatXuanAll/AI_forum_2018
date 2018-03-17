@@ -1,58 +1,86 @@
 @import components/reset
 @import components/navibar
 @import components/banner
+@import components/section
+@import components/staticPath
 @import components/title
 @import components/footer
+
 +navibar(#eb5a5a)
 +banner(#eb5a5a, #00a0e7)
 
-$titleTextColor: #273063
-$contentTextColor: #595a5f
-$linkHoverBgColor: #8e8f95
-
-#mainContent
-  background: linear-gradient(to bottom, darken(white, 10%), white, white, white, white)
-  text-align: center
+// section 1, color #ffffff
++sectionSetup( #ffffff, 100%, 60%, 1 )
+section:nth-of-type(1)
   width: 100%
   padding: 5%
+  +title( #047b8b, 1 )
 
-  hr
-    color: $linkHoverBgColor
-    border-width: 1px
-    display:block
-    border-style: inset
-    margin-bottom: 2rem
-  h1
-    font-weight: 100
-    font-size: 1.5rem
-    color: $titleTextColor
-    margin-top: 2rem
-    margin-bottom: 1rem
+  article
+    margin-top: 5%
+    display: grid
+    grid-template-areas: "image header" "image content"
+    grid-column-gap: 5%
 
-  p
-    color: $titleTextColor
-    font-size: 0.7rem
+    img
+      grid-area: image
+      justify-self: right
+      width: 60%
+      height: auto
 
-  a
-    &:link
-      text-decoration: none
-      color: $titleTextColor
-    &:visited
-      text-decoration: none
-      color: $titleTextColor
-    &:hover
-  div
-    font-size: 0.7rem
-    margin-bottom: 1rem
-    a
-      padding: 0.2rem
-      text-decoration: none
-      color: $contentTextColor
-      transition: color 0.2s ease-out, background 0.2s ease-in
-      &:hover
-        color: #ffffff
-        background: $linkHoverBgColor
-  img
-    margin: .5rem .5rem .5rem .5rem
+    h1
+      grid-area: header
+      justify-self: left
+      align-self: end
+      font-size: 1rem
+      color: #707070
+
+    a 
+      grid-area: content
+      justify-self: left
+      align-self: center
+      color: #707070
+      text-decoration: underline
+    
+
+// section 2, color #ffffff
++sectionSetup( #ffffff, 100%, auto, 2 )
+section:nth-of-type(2)
+  width: 100%
+  padding: 5%
+  +title( #047b8b, 1 )
+
+  article
+    margin-top: 5%
+    display: grid
+    grid-template-areas: "header image" "content1 image" "content2 image"
+
+    img
+      grid-area: image
+      justify-self: center
+      width: 60%
+      height: auto
+
+    h1
+      grid-area: header
+      justify-self: right
+      align-self: end
+      display: inline-box
+      font-size: 1rem
+      color: #707070
+
+    a:nth-of-type(1) 
+      grid-area: content1
+      justify-self: right
+      align-self: center
+      color: #707070
+      text-decoration: underline
+
+    a:nth-of-type(2) 
+      grid-area: content2
+      justify-self: right
+      align-self: start
+      color: #707070
+      text-decoration: underline
 
 +footer(#eb5a5a)

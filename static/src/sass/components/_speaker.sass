@@ -1,16 +1,23 @@
 @mixin speaker
   figure
+
+    &:hover
+      img
+        border: 5px solid #ffffff
+
+      h1, h2
+        font-weight: bold
+    
     img
+      border: 5px solid transparent
       border-radius: 50%
+      transition: .3s
       width: 17vw
       height: 17vw
+      
     figcaption
-      h1
+
+      h1, h2
+        transition: .3s
         font-weight: normal
-        color: #ffffff
         font-size: 20px
-      h2
-        font-weight: normal
-        color: #ffffff
-        font-size: 20px
-      p

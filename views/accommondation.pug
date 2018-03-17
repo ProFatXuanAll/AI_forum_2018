@@ -8,28 +8,27 @@ block header
 block content
   include components/title.pug
   +banner
-  section#mainContent
-    h1
-      a(href='http://www.zendasuites.com.tw/') 成大會館
-    img(src=`${ static }/images/accommo_ncku_ext.jpg` alt='成大會館外部圖片')
-    p 訂房單 (reservation form)
-      div
-        a(href=`${ static }/files/RV_Form_ncku_en.pdf`)
-          span(class='far fa-file-pdf')
-          |  English Ver.
-    hr
-    h1
-      a(href='https://www.shangri-la.com/tc/tainan/fareasternplazashangrila/') 香格里拉遠東國際大飯店
-    img(src=`${ static }/images/accommo_sgrr_combine2.png` alt='香格里拉飯店圖片' id='img_sgrr' style='width:800px;')
-    p 訂房單 (reservation form)
-      div
-        a(href=`${ static }/files/RV_Form_sgrr_ch.pdf`)
-          span(class='far fa-file-pdf')
-          |  中文版
-        a(href=`${ static }/files/RV_Form_sgrr_en.pdf`)
-          span(class='far fa-file-pdf')
-          |  English Ver.
-    hr
+  section
+    a(href='http://www.zendasuites.com.tw/')
+      +title( '成大會館' )
+    article
+      img(src=`${ static }/images/accommo_ncku_ext.jpg` alt='成大會館外部圖片')
+      h1 訂房單 (reservation form)
+      a(href=`${ static }/files/RV_Form_ncku_en.pdf`)
+        span(class='far fa-file-pdf')
+        |  English Ver.
+  section
+    a(href='https://www.shangri-la.com/tc/tainan/fareasternplazashangrila/')
+      +title( '香格里拉遠東國際大飯店' )
+    article
+      img(src=`${ static }/images/accommo_sgrr_combine2.png` alt='香格里拉飯店圖片' id='img_sgrr' style='width:800px;')
+      h1 訂房單 (reservation form)
+      a(href=`${ static }/files/RV_Form_sgrr_ch.pdf`)
+        span(class='far fa-file-pdf')
+        |  中文版
+      a(href=`${ static }/files/RV_Form_sgrr_en.pdf`)
+        span(class='far fa-file-pdf')
+        |  English Ver.
 
 block scripts
   //script(src=`${ static }/js/particles.js`)

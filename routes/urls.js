@@ -24,15 +24,17 @@ const urlSettings = ( req, res, next ) => {
     next();
 };
 
-router.get( '/', urlSettings, function( req, res, next ) {
+router.use( urlSettings );
+
+router.get( '/', function( req, res, next ) {
     res.render( 'index' );
 } );
 
-router.get( '/registration', urlSettings, function( req, res, next ) {
+router.get( '/registration', function( req, res, next ) {
     res.render( 'registration' );
 } );
 
-router.post( '/registration', urlSettings, function( req, res, next ) {
+router.post( '/registration', function( req, res, next ) {
     let newAttendee = new Attendee( {
        firstName: req.body.firstName,
        lastName: req.body.lastName,
@@ -56,21 +58,21 @@ router.post( '/registration', urlSettings, function( req, res, next ) {
     } );
 } );
 
-router.use( '/agenda', urlSettings, agenda );
+router.use( '/agenda', agenda );
 
-router.get( '/location', urlSettings, function( req, res, next ) {
+router.get( '/location', function( req, res, next ) {
     res.render( 'location' );
 } );
 
-router.get( '/accommondation', urlSettings, function( req, res, next ) {
+router.get( '/accommondation', function( req, res, next ) {
     res.render( 'accommondation' );
 } );
 
-router.get( '/contact', urlSettings, function( req, res, next ) {
+router.get( '/contact', function( req, res, next ) {
     res.render( 'contact' );
 } );
 
-router.get( '/host', urlSettings, function( req, res, next ) {
+router.get( '/host', function( req, res, next ) {
     res.render( 'host' );
 } );
 
