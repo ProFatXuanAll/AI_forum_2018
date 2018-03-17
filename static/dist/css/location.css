@@ -319,6 +319,8 @@ footer {
   color: #ffffff;
   font-size: .65rem;
   grid-template-areas: "left right"; }
+  footer a {
+    color: #ffffff; }
   footer p {
     padding: 8px 0; }
   footer div:nth-of-type(1) {
