@@ -1,10 +1,10 @@
-mixin banner( bgColor, titleColor )
+mixin banner
   section#banner(style=`background-color: ${ bgColor };`)
     +naviBar
     div#bannerContent
       img(src=`${ static }/images/logoWhite.png`)
-      p AI Forum
-        span(style=`color: ${ titleColor };`) 2018
+      p AI Forum  
+        span 2018
       p artificial intelligence forum in NCKU
       img#bgImg1(src=`${ static }/images/tree.png`)
       img#bgImg2(src=`${ static }/images/tree.png`)

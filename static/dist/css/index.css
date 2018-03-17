@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
 * {
   padding: 0;
   border: 0;
@@ -13,6 +41,145 @@ html {
 body {
   width: 100%;
   height: 100%; }
+
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("fonts/NotoSans-Black.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.otf"); }
+
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url("fonts/NotoSans-DemiLight.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("fonts/NotoSans-Light.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("fonts/NotoSans-Medium.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.otf"); }
+
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("fonts/NotoSans-Thin.otf"); }
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-family: "Work Sans", Arial, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+footer {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-color: #777777;
+  color: #ffffff; }
+  footer h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px auto; }
+  footer p {
+    margin-left: 40%; }
+  footer span {
+    font-size: .5rem;
+    text-align: center; }
+
+nav {
+  position: relative;
+  display: grid;
+  z-index: 999;
+  border-bottom: 1px solid #ffffff;
+  padding: 0 40px;
+  height: 60px;
+  background: #f4b307;
+  grid-template-columns: 60px 60px 60px auto 120px 100px 100px 100px;
+  grid-template-areas: 'index registration agenda  .  host accomondation location contact';
+  align-items: start; }
+  nav a {
+    font-size: 0.55rem;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 10px 7px;
+    text-decoration: none;
+    transition: border-bottom .5s; }
+    nav a:hover {
+      border-bottom: 3px solid rgba(255, 255, 255, 0.7); }
+    nav a:nth-child(1) {
+      grid-area: index; }
+    nav a:nth-child(2) {
+      grid-area: registration; }
+    nav a:nth-child(3) {
+      grid-area: agenda; }
+    nav a:nth-child(4) {
+      grid-area: host; }
+    nav a:nth-child(5) {
+      grid-area: accomondation; }
+    nav a:nth-child(6) {
+      grid-area: location; }
+    nav a:nth-child(7) {
+      grid-area: contact; }
 
 section:nth-of-type(1) {
   background-color: #ffffff;
