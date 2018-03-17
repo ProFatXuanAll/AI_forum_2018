@@ -225,18 +225,18 @@ nav {
     nav a:nth-child(7) {
       grid-area: contact; }
 
-#banner {
+header {
   position: relative;
   width: 100%;
   height: 50%;
   overflow: hidden;
   background-color: #eb5a5a; }
-  #banner img {
+  header img {
     height: 200px;
     width: 200px;
     position: fixed;
     opacity: 1; }
-  #banner #bgImg1 {
+  header #bgImg1 {
     width: 800px;
     height: 800px;
     transition: filter .4s;
@@ -245,9 +245,9 @@ nav {
     left: -470%;
     z-index: 1;
     opacity: 0.5; }
-    #banner #bgImg1:hover {
+    header #bgImg1:hover {
       filter: invert(100%); }
-  #banner #bgImg2 {
+  header #bgImg2 {
     width: 800px;
     height: 800px;
     transition: filter .4s;
@@ -256,9 +256,9 @@ nav {
     right: -500%;
     z-index: 1;
     opacity: 0.5; }
-    #banner #bgImg2:hover {
+    header #bgImg2:hover {
       filter: invert(100%); }
-  #banner #bannerContent {
+  header #bannerContent {
     color: #ffffff;
     z-index: 0;
     position: absolute;
@@ -271,16 +271,16 @@ nav {
     grid-template-rows: 120px 80px;
     grid-template-areas: 'logo title' 'logo subtitle';
     align-items: center; }
-    #banner #bannerContent img {
+    header #bannerContent img {
       grid-area: logo; }
-    #banner #bannerContent p:nth-of-type(1) {
+    header #bannerContent p:nth-of-type(1) {
       grid-area: title;
       z-index: 99;
       font-size: 2.5rem; }
-    #banner #bannerContent span {
+    header #bannerContent span {
       color: #00a0e7;
       z-index: 99; }
-    #banner #bannerContent p:nth-of-type(2) {
+    header #bannerContent p:nth-of-type(2) {
       grid-area: subtitle;
       z-index: 99;
       font-size: .8rem; }
