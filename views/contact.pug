@@ -4,14 +4,14 @@ block css
   link(rel='stylesheet' href=`${ static }/css/contact.css`)
 
 block header
-  +navigationBar( 'contact' )
 
 block content
-  +bannerText('聯絡我們')
+  include components/title.pug
+  +banner
   section#mainContent
     h1 聯絡我們
     hr
 
 block scripts
-  script(src=`${ static }/js/particles.js`)
-  script(src=`${ static }/js/index.js`)
+  //script(src=`${ static }/js/particles.js`)
+  //script(src=`${ static }/js/index.js`)

@@ -4,10 +4,10 @@ block css
   link(rel='stylesheet' type='text/css' href=`${ static }/css/accommodation.css`)
 
 block header
-  +navigationBar( 'accommondation' )
 
 block content
-  +bannerText('住宿資訊')
+  include components/title.pug
+  +banner
   section#mainContent
     h1
       a(href='http://www.zendasuites.com.tw/') 成大會館
@@ -32,5 +32,5 @@ block content
     hr
 
 block scripts
-  script(src=`${ static }/js/particles.js`)
-  script(src=`${ static }/js/index.js`)
+  //script(src=`${ static }/js/particles.js`)
+  //script(src=`${ static }/js/index.js`)

@@ -4,127 +4,121 @@ block css
   link(rel='stylesheet' type='text/css' href=`${ static }/css/index.css`)
 
 block header
-  +navigationBar( 'home' )
 
 block content
-  include components/speaker.pug
-  section#top
-    div.trim(id='blackTreeTopLeft')
-      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
-    div.trim(id='blackTreeTopRight')
-      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
-    div.trim(id='blackTreeBottomRight')
-      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
-    div.image
-      img.whiteTreeLogo(src=`${ static }/images/logo_tree_white.png`)
-    div.head
-      h1 AI Forum&emsp;
-        span 2018
-      h2 artificial intelligence forum in NCKU
-    div.buttonApplyArea
-      button APPLY NOW
-  // +bannerText('2018 AI Forum', 'in NCKU, Tainan')
+  include components/title.pug
+  +naviBar
   section#mainContent
-    article
-      +title('關於')
-      h1 人工智慧研討會論壇的緣起
-      p &emsp;&emsp;人工智慧（artificial intelligence、AI）這個名詞自 1956 年誕生以來，便不斷地 與日新月異的現代科技一起發展進步，為提升人類的生活品質做出貢獻。今天無論是在：機器人、汽車、手機、家電、乃至於搜尋引擎與推薦系統中，都存在著人工智慧扮演不可或缺的角色，與我們的生活緊密結合。
-        br
-        br
-        | &emsp;&emsp;而在現實生活中，其實已經有不少人工智慧技術早已被廣泛應用，只是一般生活中根本不會與電影內容所提及的人工智慧作連結，但確實帶來許多便利體驗。如蘋果Siri、微軟Cortana與Google所打造的Google Now服務，其實背後除了藉由大量個人資料、網路資訊支撐，其中也包含配合人工智慧系統協助判斷資料重要性、正確性，藉此給予使用者最佳解答，例如常見的線上機器人客服系統也是使用大量人工智慧資源。
-        br
-        br
-        | &emsp;&emsp;從中華民國人工智慧學會 (TAAI) 於 1999 年，在國立暨南國際大學首次舉辦人工智慧論壇研討會 (AI Forum) 以來，AI Forum 已成為國內人工智慧研究領域一年一度的盛事！以論壇的方式，提供國內大學、研究單位及產業界的專家與學者一個交流與整合的平台。 
-        br
-        br
-        | &emsp;&emsp;經過了十九年，AI Forum 將在 2018年 4 月27、28日 兩天，即將到台南的國立成功大學舉辦。在這十九年的歲月間，隨著每一次年會走過的腳印，都可以看到人工智慧所刻劃下的里程碑，也彰顯了台灣產官學界，在人工智慧這個領域的長年耕耘。雖然2017為台灣的AI元年，但學會在人工智慧的深耕，確已經深化在台灣學術與工業界個領域。特別是在過去的這幾年中，雲端、大數據、與深度學習的興起，更風起雲湧地將人工智慧的研究推上新的高峰！也更凸顯出 AI Forum 的意義與重要！ 
-        br
-        br
-        | &emsp;&emsp;在 2018 AI Forum 中更進一步、也更特別的是：有鑒於近年來深度學習在人工智慧學術研究上影響越來越密切，在全球各國的實際應用也如雨後春筍般的出現，我們特別安排了『深度學習技術與社會價值高峰論壇』的 Special Session。邀請到多位應用人工智能在實際生活的學界重量級學者專家，來台共襄盛舉。另外，配合科技部的AI創新計畫，我們也將呈現個智慧主題下重要的成果與研究。
-    figure
-      // img(src=`${ static }/images/logoBlackBig.png`)
-    section#speakers
-      +title('演講講師')
-      +speaker(`${ static }/images/speaker_hang_lee.jpg`, '李航(Hang Li) 主任', '李航 主任', 'Prof. Hang Li', '今日頭條實驗室主任，曾任華爲諾亞方舟實驗室主任；1990-2001年，供職於NEC公司研究實驗室；2001-2012年，在微軟亞洲研究院工作；其研究領域包括信息檢索、自然語言處理、統計機器學習和數據挖掘。' )
-      +speaker(`${ static }/images/speaker_lim_ee_peng.jpg`, '林一平(Lim Ee Peng) 教授', '林一平 教授', 'Prof. Ee Peng Lim', '現為新加坡管理大學的教授，現為多個IEEE/ACM重要期刊的副編輯，如:ACM Transaction on Web, TKDE, ACM TIS, IEEE Intelligent Systems, 他也是今年CIKM會議的主席之一, CIKM為資料探勘頂尖會議之一. 林教授多年在新加坡管理大學推廣多項國際合作，其團隊也與MIT有相當多實質的合作與研究進行, 也在大數據與人工智慧領域有不少研究成果，期能將新加坡這幾年將AI運用領域與推廣方式進行分享。' )
-      +speaker(`${ static }/images/speaker_haixun_wang.jpg`, '王海勳(Haixun Wang) 博士', '王海勳 博士', 'Dr. Haixun Wang', '王海勳博士現任亞馬遜NLP集團董事。在加入亞馬遜之前，曾在Google、微軟亞洲，IBM Research（沃森）工作過。王博士研究領域為文字分析Text Analytics, 自然語言處理，知識庫建構與語意網路，Artificial Intelligence等。王博士曾得過ICDE 2015年的最佳論文獎，在2014年得到ICDM 10 Year Highest Impact Paper Award，在微軟研究院時，王博士建構出一個語料知識庫Probase (a data driven semantic network for text understanding)，也是在文字處理上相當重要的一個語料庫。' )
-    section#apply
-      +title('報名＆費用')
-      button APPLY NOW
-      p 早鳥優惠進行中
-        br
-        | Due on 
-        span April 07, 2018 at 0:00:00 PM
-    section#signUpRule
-      div
-        h1 費用
-        h2 報名注意事項
-        ol
-          li 
-            dl
-              dt 線上信用卡付款: 
-                dd 本會使用
-                  a(href='') 玉山銀行網路特約商店線上金流系統
-                  | 。 
-                dd *依信用卡國際組織規定,在台灣設置線上金流系統,只限於用當地貨幣(NTD)結帳。 
-          li 匯款(ATM/轉帳)方式: 
-            br
-            | 玉山銀行(808)新竹分行(0060)  帳號:0060‐940‐012133, 戶名:中華民國人工智慧學會許輝煌
-    table
-      tr
-        th 時間
-        th 一般身份
-          br
-          |（TAAI會員）
-        th 一般身份
-          br
-          |（非TAAI會員）
-        th 學生
-          br
-          |（TAAI會員）
-        th 學生
-          br
-          |（非TAAI會員）
-      tr
-        td 早鳥優惠
-          br
-          |（before 4/7）
-        td 2500
-        td 3500
-        td 1400
-        td 1800
-      tr
-        td 正常報名
-          br
-          |（after 4/7）
-        td 3000
-        td 4000
-        td 1900
-        td 2300
-      tr
-        td 現場報名
-        td 3000
-        td 4000
-        td 1900
-        td 2300
-  section#loc
-    +title('會議地點')
-    div#paragraph
-      section.blk
-        p
-          span(class='fas fa-map-marker-alt')
-          | &emsp;香格里拉遠東國際大飯店
-      section.blk
-        button 前往官網
-    div#mapNimg
-      section#map
-      div
-        img(src=`${ static }/images/accommo_sgrr_ext.jpg` alt='')
-      div
-        img(src=`${ static }/images/conference_loc_map.jpg` alt='')
+      h1 人工智慧論壇研討會的緣起
+      p 人工智慧（artificial intelligence、AI）這個名詞自 1956 年誕生以來，便不斷地 與日新月異的現代科技一起發展進步，為提升人類的生活品質做出貢獻。今天無論是在：機器人、汽車、手機、家電、乃至於搜尋引擎與推薦系統中，都存在著人工智慧扮演不可或缺的角色，與我們的生活緊密結合。
+      p 而在現實生活中，其實已經有不少人工智慧技術早已被廣泛應用，只是一般生活中根本不會與電影內容所提及的人工智慧作連結，但確實帶來許多便利體驗。如蘋果Siri、微軟Cortana與Google所打造的Google Now服務，其實背後除了藉由大量個人資料、網路資訊支撐，其中也包含配合人工智慧系統協助判斷資料重要性、正確性，藉此給予使用者最佳解答，例如常見的線上機器人客服系統也是使用大量人工智慧資源。
+      p 從中華民國人工智慧學會 (TAAI) 於 1999 年，在國立暨南國際大學首次舉辦人工智慧論壇研討會 (AI Forum) 以來，AI Forum 已成為國內人工智慧研究領域一年一度的盛事！以論壇的方式，提供國內大學、研究單位及產業界的專家與學者一個交流與整合的平台。 
+      p 經過了十九年，AI Forum 將在 2018 年 5 月 4、5 日兩天，即將到台南的國立成功大學舉辦。在這十九年的歲月間，隨著每一次年會走過的腳印，都可以看到人工智慧所刻劃下的里程碑，也彰顯了台灣產官學界，在人工智慧這個領域的長年耕耘。雖然2017為台灣的AI元年，但學會在人工智慧的深耕，確已經深化在台灣學術與工業界個領域。特別是在過去的這幾年中，雲端、大數據、與深度學習的興起，更風起雲湧地將人工智慧的研究推上新的高峰！也更凸顯出 AI Forum 的意義與重要！ 
+      p 在 2018 AI Forum 中更進一步、也更特別的是：有鑒於近年來深度學習在人工智慧學術研究上影響越來越密切，在全球各國的實際應用也如雨後春筍般的出現，我們特別安排了『深度學習技術與社會價值高峰論壇』的 Special Session。邀請到多位應用人工智能在實際生活的學界重量級學者專家，來台共襄盛舉。另外，配合科技部的AI創新計畫，我們也將呈現個智慧主題下重要的成果與研究。
+  section
+    +title( 'Keynote Speakers' )
+  section
+    +title( 'Keynote Speakers' )
+  section
+    +title( 'Keynote Speakers' )
+  section
+    +title( 'Keynote Speakers' )
+  section
+    +title( '報名' )
+  section
+    +title( '費用' )
+  section
+    +title( '會議地點' )
+  section
+    +title( '關於' )
+        //    article
+        //    figure
+        //      // img(src=`${ static }/images/logoBlackBig.png`)
+        //    section#speakers
+        //      +title('演講講師')
+        //      +speaker(`${ static }/images/speaker_hang_lee.jpg`, '李航(Hang Li) 主任', '李航 主任', 'Prof. Hang Li', '今日頭條實驗室主任，曾任華爲諾亞方舟實驗室主任；1990-2001年，供職於NEC公司研究實驗室；2001-2012年，在微軟亞洲研究院工作；其研究領域包括信息檢索、自然語言處理、統計機器學習和數據挖掘。' )
+        //      +speaker(`${ static }/images/speaker_lim_ee_peng.jpg`, '林一平(Lim Ee Peng) 教授', '林一平 教授', 'Prof. Ee Peng Lim', '現為新加坡管理大學的教授，現為多個IEEE/ACM重要期刊的副編輯，如:ACM Transaction on Web, TKDE, ACM TIS, IEEE Intelligent Systems, 他也是今年CIKM會議的主席之一, CIKM為資料探勘頂尖會議之一. 林教授多年在新加坡管理大學推廣多項國際合作，其團隊也與MIT有相當多實質的合作與研究進行, 也在大數據與人工智慧領域有不少研究成果，期能將新加坡這幾年將AI運用領域與推廣方式進行分享。' )
+        //      +speaker(`${ static }/images/speaker_haixun_wang.jpg`, '王海勳(Haixun Wang) 博士', '王海勳 博士', 'Dr. Haixun Wang', '王海勳博士現任亞馬遜NLP集團董事。在加入亞馬遜之前，曾在Google、微軟亞洲，IBM Research（沃森）工作過。王博士研究領域為文字分析Text Analytics, 自然語言處理，知識庫建構與語意網路，Artificial Intelligence等。王博士曾得過ICDE 2015年的最佳論文獎，在2014年得到ICDM 10 Year Highest Impact Paper Award，在微軟研究院時，王博士建構出一個語料知識庫Probase (a data driven semantic network for text understanding)，也是在文字處理上相當重要的一個語料庫。' )
+        //    section#apply
+        //      +title('報名＆費用')
+        //      button APPLY NOW
+        //      p 早鳥優惠進行中
+        //        br
+        //        | Due on 
+        //        span April 07, 2018 at 0:00:00 PM
+        //    section#signUpRule
+        //      div
+        //        h1 費用
+        //        h2 報名注意事項
+        //        ol
+        //          li 
+        //            dl
+        //              dt 線上信用卡付款: 
+        //                dd 本會使用
+        //                  a(href='') 玉山銀行網路特約商店線上金流系統
+        //                  | 。 
+        //                dd *依信用卡國際組織規定,在台灣設置線上金流系統,只限於用當地貨幣(NTD)結帳。 
+        //          li 匯款(ATM/轉帳)方式: 
+        //            br
+        //            | 玉山銀行(808)新竹分行(0060)  帳號:0060‐940‐012133, 戶名:中華民國人工智慧學會許輝煌
+        //    table
+        //      tr
+        //        th 時間
+        //        th 一般身份
+        //          br
+        //          |（TAAI會員）
+        //        th 一般身份
+        //          br
+        //          |（非TAAI會員）
+        //        th 學生
+        //          br
+        //          |（TAAI會員）
+        //        th 學生
+        //          br
+        //          |（非TAAI會員）
+        //      tr
+        //        td 早鳥優惠
+        //          br
+        //          |（before 4/7）
+        //        td 2500
+        //        td 3500
+        //        td 1400
+        //        td 1800
+        //      tr
+        //        td 正常報名
+        //          br
+        //          |（after 4/7）
+        //        td 3000
+        //        td 4000
+        //        td 1900
+        //        td 2300
+        //      tr
+        //        td 現場報名
+        //        td 3000
+        //        td 4000
+        //        td 1900
+        //        td 2300
+        //  section#loc
+        //    +title('會議地點')
+        //    div#paragraph
+        //      section.blk
+        //        p
+        //          span(class='fas fa-map-marker-alt')
+        //          | &emsp;香格里拉遠東國際大飯店
+        //      section.blk
+        //        button 前往官網
+        //    div#mapNimg
+        //      section#map
+        //      div
+        //        img(src=`${ static }/images/accommo_sgrr_ext.jpg` alt='')
+        //      div
+        //        img(src=`${ static }/images/conference_loc_map.jpg` alt='')
 
 block scripts
   script(src=`${ static }/js/particles.js`)
   script(src=`${ static }/js/index.js`)
   script(src=`${ static }/js/googleMap.js`)
   script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqat2GqcAiq50z532bofCqOdTwH6LnwsI&callback=initMap')
+  //section#mainContent
+  //  figure
+  //    img(src=`${ static }/images/logoBlackBig.png`)

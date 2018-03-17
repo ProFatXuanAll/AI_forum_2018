@@ -23,18 +23,12 @@ html
     //- title tag setup
     title AI forum 2018
 
-    //- css link block
-    link(rel='stylesheet' type='text/css' href=`${ static }/css/header.css`)
-    link(rel='stylesheet' type='text/css' href=`${ static }/css/banner.css`)
-    link(rel='stylesheet' type='text/css' href=`${ static }/css/title.css`)
-    link(rel='stylesheet' type='text/css' href=`${ static }/css/footer.css`)
-    
     block css
+
   body
     //- header block
-    include ../components/header.pug
+    include ../components/navibar.pug
     include ../components/banner.pug
-    include ../components/title.pug
     block header
 
     //- content block
