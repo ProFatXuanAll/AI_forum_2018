@@ -52,11 +52,18 @@ block content
   section
     +title( '報名 & 費用' )
     +button( 'APPLY NOW', `${ root }/registration` )
+    article
+      h1 早鳥優惠進行中
+      p Due on 
+        span April 07, 2018 at 0:00:00 PM
   section
     +title( '會議地點' )
-  section
-    +title( '關於' )
+    article
+      span(class='fas fa-map-marker-alt') 
+      span  香格里拉遠東國際大飯店
+    +button( '前往官網', 'http://www.shangri-la.com/tc/tainan/fareasternplazashangrila/' )
+    div#map
 
 block scripts
   script(src=`${ static }/js/googleMap.js`)
-  //script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqat2GqcAiq50z532bofCqOdTwH6LnwsI&callback=initMap')
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqat2GqcAiq50z532bofCqOdTwH6LnwsI&callback=initMap')
