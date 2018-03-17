@@ -158,10 +158,6 @@ section:nth-of-type(2)
 
     h1, h2
       text-align: center
-
-    //figure:nth-of-type(1)
-    //  gird
-
 // ========================================
 
 // ========================================
@@ -169,6 +165,19 @@ section:nth-of-type(2)
 +sectionSetup( #eb5a5a, 100%, 90%, 3 )
 section:nth-of-type(3)
   +title( #ffffff, 1 )
+
+  article
+    padding: 5%
+    display: grid
+    grid-template-columns: repeat( auto-fill, minmax( 334px, 1fr ) )
+    grid-column-gap: 20%
+    +speaker
+
+    figure
+      justify-self: center
+
+    h1, h2
+      text-align: center
 // ========================================
 
 // ========================================
@@ -193,16 +202,9 @@ section:nth-of-type(6)
 // ========================================
 
 // ========================================
-// section 7, color #ffffff
-+sectionSetup( #ffffff, 100%, 90%, 7 )
+// section 7, color #bfc4c7
++sectionSetup( #bfc4c7, 100%, 90%, 7 )
 section:nth-of-type(7)
-  +title( #047b8b, 1 )
-// ========================================
-
-// ========================================
-// section 8, color #bfc4c7
-+sectionSetup( #bfc4c7, 100%, 90%, 8 )
-section:nth-of-type(8)
   
   +title( #047b8b, 1 )
 // ========================================
