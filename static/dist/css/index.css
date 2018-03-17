@@ -130,69 +130,6 @@ body {
   width: 100%;
   height: 100%; }
 
-<<<<<<< HEAD
-.header {
-  font-size: 1.5rem;
-  text-align: center;
-  text-shadow: 3px 3px 5px #c9c9ee;
-  padding: 10px auto; }
-
-.clearboth::after {
-  display: block;
-  visibility: hidden;
-  clear: both;
-  content: ''; }
-
-.divider {
-  padding: 15px 8%; }
-
-.dividerInner {
-  border-top: 1.8px solid #b2b2dd; }
-
-@font-face {
-  font-family: "NotoSans-Black";
-  src: url("fonts/NotoSans-Black.otf"); }
-
-@font-face {
-  font-family: "NotoSans-Bold";
-  src: url("fonts/NotoSans-Bold.otf"); }
-
-@font-face {
-  font-family: "NotoSans-DemiLight";
-  src: url("fonts/NotoSans-DemiLight.otf"); }
-
-@font-face {
-  font-family: "NotoSans-Light";
-  src: url("fonts/NotoSans-Light.otf"); }
-
-@font-face {
-  font-family: "NotoSans-Medium";
-  src: url("fonts/NotoSans-Medium.otf"); }
-
-@font-face {
-  font-family: "NotoSans-Regular";
-  src: url("fonts/NotoSans-Regular.otf"); }
-
-@font-face {
-  font-family: "NotoSans-Thin";
-  src: url("fonts/NotoSans-Thin.otf"); }
-
-* {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-html {
-  width: 100%;
-  height: 100%;
-  font-size: 32px;
-  font-family: "Work Sans", Arial, sans-serif; }
-
-body {
-  width: 100%;
-  height: 100%; }
-
 footer {
   padding-top: 5%;
   padding-bottom: 2%;
@@ -244,28 +181,6 @@ nav {
     nav a:nth-child(7) {
       grid-area: contact; }
 
-#mainContent {
-  background: linear-gradient(to bottom, #e6e6e6, white, white, white, white);
-  padding: 8%; }
-  #mainContent article, #mainContent figure {
-    width: 50%;
-    float: left; }
-  #mainContent article {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: .7rem;
-    line-height: 1.8; }
-    #mainContent article p {
-      margin: 15px 0;
-      color: #888888; }
-  #mainContent img {
-    height: 80%;
-    width: 80%; }
-  #mainContent::after {
-    content: '';
-    clear: both;
-    display: table; }
-=======
 section:nth-of-type(1) {
   background-color: #ffffff;
   width: 100%;
@@ -411,4 +326,3 @@ section:nth-of-type(8) hr.title:nth-of-type(1) {
   width: 70%;
   height: 1%;
   margin: 0 auto; }
->>>>>>> e119cbbfca420ce1d04735ad5d1647f89a04b259
