@@ -1,16 +1,23 @@
 @import reset
 
-footer
-  padding-top: 5%
-  padding-bottom: 2%
-  background-color: #777777
-  color: #ffffff
-  h1
-    font-size: 1rem
-    text-align: center
-    margin: 10px auto
-  p
-    margin-left: 40%
-  span
-    font-size: .5rem
-    text-align: center
+@mixin footer( $footer-color )
+  footer
+    display: grid
+    padding: 60px 5%
+    background-color: $footer-color
+    color: #ffffff
+    font-size: .65rem
+    p
+      padding: 8px 0
+    div:nth-of-type(1)
+      grid-area:left
+      align-self: center
+    div:nth-of-type(2)
+      grid-area: right
+      align-self: end
+      justify-self: end
+      img
+        filter: invert(100%)
+        width: 50px
+        height: 50px
+    grid-template-areas: "left right"
