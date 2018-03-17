@@ -8,6 +8,21 @@ block header
 block content
   include components/title.pug
   +naviBar
+  header#top
+    div.trim(id='blackTreeTopLeft')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
+    div.trim(id='blackTreeTopRight')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
+    div.trim(id='blackTreeBottomRight')
+      img(src=`${ static }/images/background_tree_black.png` class='bgImage')
+    div.image
+      img.whiteTreeLogo(src=`${ static }/images/logo_tree_white.png`)
+    div.head
+      h1 AI Forum&emsp;
+        span 2018
+      h2 artificial intelligence forum in NCKU
+    div.buttonApplyArea
+      button APPLY NOW
   section#mainContent
       h1 人工智慧論壇研討會的緣起
       p 人工智慧（artificial intelligence、AI）這個名詞自 1956 年誕生以來，便不斷地 與日新月異的現代科技一起發展進步，為提升人類的生活品質做出貢獻。今天無論是在：機器人、汽車、手機、家電、乃至於搜尋引擎與推薦系統中，都存在著人工智慧扮演不可或缺的角色，與我們的生活緊密結合。
