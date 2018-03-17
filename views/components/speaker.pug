@@ -1,7 +1,7 @@
-mixin speaker( imgSrc, imgAlt, cname, ename, content )
+mixin speaker( imgSrc, imgAlt, cname, ename, url )
   figure(class='speaker')
-    img(src=imgSrc alt=imgAlt )
+    a(href=url)
+      img(src=imgSrc alt=imgAlt )
     figcaption
       h1= cname
       h2= ename
-      p= content
