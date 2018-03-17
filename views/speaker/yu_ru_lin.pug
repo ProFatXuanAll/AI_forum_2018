@@ -3,8 +3,12 @@ extends ../layouts/base.pug
 block css
 
 block header
+  link(rel='stylesheet' href=`${ static }/css/yu_ru_lin.css`)
 
 block content
-  p yu ru lin
+  include ../components/speakerContent.pug
+  +banner
+  +speakerContent('教授', 'Prof. Yu Ru Lin', '', 'title1', 'content1', '', '', '', '', `${ static }/images/speaker_yu_ru_lin.jpg`, 'Prof. Yu Ru Lin')
 
 block scripts
+

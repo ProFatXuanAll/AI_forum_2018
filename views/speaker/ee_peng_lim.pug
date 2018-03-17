@@ -3,8 +3,11 @@ extends ../layouts/base.pug
 block css
 
 block header
+  link(rel='stylesheet' href=`${ static }/css/ee_peng_lim.css`)
 
 block content
-  p ee pen lim
+  include ../components/speakerContent.pug
+  +banner
+  +speakerContent('林一平 教授', 'Prof. Ee Peng Lim', 'Data Science for Smart Cities/Nations',  'Abstract', 'Data science combines the use of AI, data mining and machine learning to uncover knowledge and insights from data in different forms, structured or unstructured. Smart city and smart nation, on the other hand, are the efforts to use sensors, information, and information technologies to address today’s and future municipal and social challenges. In this talk, we will discuss the research and application opportunities of using data science to create new and smart services for people living in highly urbanized cities and nations, an important aspect of smart city/nation efforts. Using a few urban topics in Singapore as examples, the talk will share the data science research challenges, insights and urban applications under these topics.', '', '', '', '', `${ static }/images/speaker_ee_peng_lim.jpg`, 'Prof. Ee Peng Lim')
 
 block scripts

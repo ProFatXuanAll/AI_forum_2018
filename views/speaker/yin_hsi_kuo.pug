@@ -3,8 +3,12 @@ extends ../layouts/base.pug
 block css
 
 block header
+  link(rel='stylesheet' href=`${ static }/css/yin_hsi_kuo.css`)
 
 block content
-  p yin hsi kuo
+  include ../components/speakerContent.pug
+  +banner
+  +speakerContent('郭盛希 博士', 'Dr. Yin Hsi Kuo', '', 'title1', 'content1', '', '', '', '', `${ static }/images/speaker_yin_hsi_kuo.jpg`, 'Dr. Yin Hsi Kuo')
 
 block scripts
+

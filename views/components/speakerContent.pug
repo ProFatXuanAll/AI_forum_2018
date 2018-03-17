@@ -1,0 +1,16 @@
+mixin speakerContent( cname, ename, intro, title1, content1, title2, content2, title3, content3, imgSrc, imgAlt )
+  section#speaker
+    div.gridContainer
+      div.textArea
+        h1(id='headerCname')= cname
+        h1= ename
+        p= intro
+        hr
+        h1(id='headerTitle')= title1
+        p= content1
+        h1(id='headerTitle')= title2
+        p= content2
+        h1(id='headerTitle')= title3
+        p= content3
+      div.imgArea
+        img(src= imgSrc, alt= imgAlt)
