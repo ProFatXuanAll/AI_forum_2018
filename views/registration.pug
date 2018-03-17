@@ -7,6 +7,7 @@ block header
 
 block content
   include components/title.pug
+  include components/button.pug
   +banner
   section#mainContent
     +title('報名資訊')
@@ -17,47 +18,10 @@ block content
           | Due on 
           span April 07, 2018 at 0:00:00 PM
       div.rightColumn
-        button APPLY NOW
-    +title('費用')
-    table
-      tr
-        th 時間
-        th 一般身份
-          br
-          |（TAAI會員）
-        th 一般身份
-          br
-          |（非TAAI會員）
-        th 學生
-          br
-          |（TAAI會員）
-        th 學生
-          br
-          |（非TAAI會員）
-      tr
-        td 早鳥優惠
-          br
-          |（4/7以前）
-        td 2500
-        td 3500
-        td 1400
-        td 1800
-      tr
-        td 正常報名
-          br
-          |（4/7以後）
-        td 3000
-        td 4000
-        td 1900
-        td 2300
-      tr
-        td 現場報名
-        td 3000
-        td 4000
-        td 1900
-        td 2300
+        +button( 'APPLY NOW', '#fee' )
   section#instruction
-    +title('報名注意事項')
+    +title('費用')
+    h2#fee 報名注意事項
     ol
       li 請填寫以下的表單進行報名，填入個人資料之後選擇付款方式
       li 繳費方式
@@ -84,7 +48,44 @@ block content
       li 若報名資料需做更改，請 email 至 
         a(href='taai?th@gmail.com') taai?th@gmail.com
         |  ，主旨請註明「2018 AI Forum 報名資料更改」。
-      
+    table
+      tr
+        th 時間
+        th 一般身份
+          br
+          |（TAAI會員）
+        th 一般身份
+          br
+          |（非TAAI會員）
+        th 學生
+          br
+          |（TAAI會員）
+        th 學生
+          br
+          |（非TAAI會員）
+      tr
+        td 早鳥優惠
+          br
+          span （before 4/7）
+        td 2500
+        td 3500
+        td 1400
+        td 1800
+      tr
+        td 正常報名
+          br
+          span （after 4/7）
+        td 3000
+        td 4000
+        td 1900
+        td 2300
+      tr
+        td 現場報名
+        td 3000
+        td 4000
+        td 1900
+        td 2300
+     
   section
     +title('填寫報名資訊')
   section#form
