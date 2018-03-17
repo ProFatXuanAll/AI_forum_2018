@@ -221,26 +221,30 @@ section:nth-of-type(6)
 
 // ========================================
 // section 7, color #bfc4c7
-+sectionSetup( #bfc4c7, 100%, 90%, 7 )
++sectionSetup( #bfc4c7, 100%, 100%, 7 )
 section:nth-of-type(7)
   +title( #047b8b, 1 )
 
   article
-    margin: 5% 5%
+    margin: 3% 5%
     display: inline-block
+    width: 25%
+
+    &:nth-of-type(1)
+      margin-left: 20%
+
+    &:nth-of-type(2)
+      margin-right: 20%
+
+    +button
 
     span
-      color: #f5f5f5
-
-  +button
-  button  
-    margin: 5% 5%
-    display: inline-block
+      color: #ffffff
 
   #map
     margin: 0 auto
-    width: 70%
-    height: 80%
+    width: 80%
+    height: 60%
 // ========================================
 
 +footer(#047b8b)
