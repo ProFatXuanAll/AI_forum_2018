@@ -25,4 +25,12 @@ router.get( '/yin_hsi_kuo', function( req, res ) {
     res.render( 'speaker/yin_hsi_kuo' );
 } );
 
+router.get( '/zhe_yuan_yan', function( req, res ) {
+    res.render( 'speaker/zhe_yuan_yan' );
+} );
+
+router.get( '/ren_xian_jian', function( req, res ) {
+    res.render( 'speaker/ren_xian_jian' );
+} );
+
 module.exports = router;

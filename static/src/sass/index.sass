@@ -177,7 +177,7 @@ section:nth-of-type(3)
     padding: 5%
     display: grid
     grid-template-columns: repeat( auto-fill, minmax( 334px, 1fr ) )
-    grid-column-gap: 20%
+    grid-column-gap: 6%
     +speaker
 
     figure
@@ -196,7 +196,24 @@ section:nth-of-type(3)
 +sectionSetup( #f4b307, 100%, 90%, 4 )
 section:nth-of-type(4)
   +title( #ffffff, 1 )
-  display: none
+
+  article
+    margin-top: 2%
+    padding: 5%
+    display: grid
+    grid-template-columns: repeat( auto-fill, minmax( 334px, 1fr ) )
+    grid-column-gap: 6%
+    +speaker
+
+    figure
+      justify-self: center
+
+    figcaption
+      margin-top: 10%
+
+    h1, h2
+      text-align: center
+      color: #ffffff
 // ========================================
 
 // ========================================
