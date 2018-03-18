@@ -2,6 +2,7 @@
 @import components/navibar
 @import components/banner
 @import components/title
+@import components/section
 @import components/footer
 +navibar(#f4b307)
 +banner(#f4b307, #eb5a5a)
@@ -10,15 +11,33 @@ $titleTextColor: #273063
 $contentTextColor: #595a5f
 $linkHoverBgColor: #8e8f95
 
-#mainContent
++sectionSetup( #ffffff, 100%, auto, 1 )
+section:nth-of-type(1)
+  margin-top: 5%
+  +title( #047b8b, 1 )
+  
+  h1
+    font-weight: 100
+    font-size: 1rem
+
++sectionSetup( #ffffff, 100%, auto, 2 )
+section#map
+  width: 80%
+  height: 60%
+  margin: auto
+
++sectionSetup( #ffffff, 100%, auto, 3 )
+section:nth-of-type(3)
   width: 100%
   padding: 5%
+  +title( #047b8b, 1 )
+
   h1
     font-weight: 100
     font-size: 1rem
     font-color: $titleTextColor
-    margin-top: 2rem
     text-align: center
+  
   h2
     font-weight: 100
     font-size: 0.8rem
@@ -26,10 +45,12 @@ $linkHoverBgColor: #8e8f95
     text-align: center
     margin-top: 1rem
     margin-bottom: 0.6rem
+  
   p
     font-size: 0.5rem
     font-color: $contentTextColor
     text-align: left
+
 #paragraph
   width: 80%
   padding: 2%
@@ -44,10 +65,4 @@ section
     text-align: left
     display: inline-block
   
-#map
-  width: 80%
-  height: 60%
-  margin: auto
-  margin-bottom: 10%
-
 +footer(#f4b307)
