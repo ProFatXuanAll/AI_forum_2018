@@ -1,5 +1,13 @@
 @mixin speaker
   figure
+    display: grid
+    grid-template-areas: 'img' 'figcap'
+
+    a
+      display: block
+      text-align: center
+      grid-area: img
+      justify-content: center
 
     &:hover
       img
@@ -14,8 +22,11 @@
       transition: .3s
       width: 17vw
       height: 17vw
+      margin: 0 auto
       
     figcaption
+      grid-area: figcap
+      justify-content: center
 
       h1, h2
         transition: .3s
