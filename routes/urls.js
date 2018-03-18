@@ -35,27 +35,27 @@ router.get( '/registration', function( req, res, next ) {
 } );
 
 router.post( '/registration', function( req, res, next ) {
-    let newAttendee = new Attendee( {
-       firstName: req.body.firstName,
-       lastName: req.body.lastName,
-       email: req.body.email,
-       organization: req.body.organization,
-       phone: req.body.phone,
-       birth: req.body.birth,
-       fee: req.body.fee,
-       taai: req.body.taai,
-       dietary: req.body.dietary,
-       memo: req.body.memo
-    } );
-    newAttendee.save()
-        .then( () => console.log( 'new attendee sign up!' ) )
-        .catch( () => console.log( 'failed to sign up!' ) );
-    console.log( req.body );
-    res.render( 'success', {
-        name: `${ req.body.firstName } ${ req.body.lastName }`,
-        birth: req.body.birth,
-        fee: req.body.fee,
-    } );
+  //let newAttendee = new Attendee( {
+  //   firstName: req.body.firstName,
+  //   lastName: req.body.lastName,
+  //   email: req.body.email,
+  //   organization: req.body.organization,
+  //   phone: req.body.phone,
+  //   birth: req.body.birth,
+  //   fee: req.body.fee,
+  //   taai: req.body.taai,
+  //   dietary: req.body.dietary,
+  //   memo: req.body.memo
+  //} );
+  //newAttendee.save()
+  //    .then( () => console.log( 'new attendee sign up!' ) )
+  //    .catch( () => console.log( 'failed to sign up!' ) );
+  //console.log( req.body );
+  //res.render( 'success', {
+  //    name: `${ req.body.firstName } ${ req.body.lastName }`,
+  //    birth: req.body.birth,
+  //    fee: req.body.fee,
+  //} );
 } );
 
 router.use( '/agenda', agenda );

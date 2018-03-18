@@ -18,7 +18,8 @@ block content
           | Due on 
           span April 07, 2018 at 0:00:00 PM
       div.rightColumn
-        +button( 'APPLY NOW', '#fee' )
+        //+button( 'APPLY NOW', '#fee' )
+        +button( 'OPEN SOON', '#fee' )
   section#instruction
     +title('費用')
     article
@@ -88,37 +89,39 @@ block content
         td 2300
      
   section
-    +title('填寫報名資訊')
+    //+title('填寫報名資訊')
+    +title('填寫報名資訊（OPEN SOON）')
   section#form
-    form(action='' method='post')
+    //form(action='' method='post')
+    p
       | 您的大名
-      input(id='fname' type='text' name='firstName' value='' placeholder='名字（First Name）' required)
+      input(id='fname' type='text' name='firstName' value='' placeholder='名字（First Name）' required disabled)
       | 您的姓氏
-      input(id='lname' type='text' name='lastName' value='' placeholder='姓氏（Last Name）' required)
+      input(id='lname' type='text' name='lastName' value='' placeholder='姓氏（Last Name）' required disabled)
       | 您的電子郵件
-      input(id='email' type='email' name='email' value='' placeholder='電子郵件（email）' required)
+      input(id='email' type='email' name='email' value='' placeholder='電子郵件（email）' required disabled)
       | 您的所屬單位
-      input(type='text' name='organization' value='' placeholder='單位（Organization）')
+      input(type='text' name='organization' value='' placeholder='單位（Organization）' disabled)
       | 您的電話號碼
-      input(id='phone' type='tel' name='phone' value='' placeholder='電話號碼（Phone Number）' required)
+      input(id='phone' type='tel' name='phone' value='' placeholder='電話號碼（Phone Number）' required disabled)
       | 您的生日末四碼
-      input(id='birth' type='text' name='birth' value='' placeholder='生日末四碼（Birthday），若為一月一號，請輸入0101' required)
+      input(id='birth' type='text' name='birth' value='' placeholder='生日末四碼（Birthday），若為一月一號，請輸入0101' required disabled)
       | 您的身份
-      select(id='fee' name='fee')
+      select(id='fee' name='fee' disabled)
         option(value='2500') 一般身份，TAAI會員(NT$ 2,500)
         option(value='3500') 一般身份，非TAAI會員(NT$ 3,500)
         option(value='1400') 學生，TAAI會員(NT$ 1,400)
         option(value='1800') 學生，非TAAI會員(NT$ 1800)
       div#taai
         | 您的TAAI會員編號
-        input(id='taaiId' type='text' name='taai' value='' placeholder='TAAI會員編號（TAAI Membership Number）')
+        input(id='taaiId' type='text' name='taai' value='' placeholder='TAAI會員編號（TAAI Membership Number）' disabled)
       | 您的飲食習慣
-      select(name='dietary')
+      select(name='dietary' disabled)
         option(value='free') 葷食
         option(value='vegetarian') 素食
       | 備註
-      input(type='text' name='memo' value='' placeholder='備註（Memo）')
-      input(id='submitBtn' type='submit' value='送出')
+      input(type='text' name='memo' value='' placeholder='備註（Memo）' disabled)
+      input(id='submitBtn' type='submit' value='送出' disabled)
 
 block scripts
   //script(src=`${ static }/js/particles.js`)

@@ -8,9 +8,18 @@ block header
 block content
   include components/title.pug
   +banner
-  section#mainContent
-    h1 聯絡我們
-    hr
+  section
+    +title( '聯絡我們' )
+    article
+      h1 
+        a(href='http://ikmlab.csie.ncku.edu.tw') 智慧型知識管理實驗室
+      h2
+        a(href='http://ikmlab.csie.ncku.edu.tw') IKM Lab
+      h3
+        a(href='http://ikmlab.csie.ncku.edu.tw') Intelligent Knowledge Management Laboratory
+      p
+        span(class='fas fa-phone') 
+        span  06-2757575 ext #62520 #2903
 
 block scripts
   //script(src=`${ static }/js/particles.js`)

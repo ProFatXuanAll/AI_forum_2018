@@ -9,14 +9,17 @@ block header
 block content
   include components/title.pug
   section
-    +title('主協辦單位')
-    img(class='img-responsive' src=`${ static }/images/host_mostbig.png` alt='中華民國科技部')
-    img(class='img-responsive' src=`${ static }/images/taai_2x.png` alt='中華民國人工智慧學會 TAAI')
+    +title('主辦單位')
     img(class='img-responsive' src=`${ static }/images/top001.png` alt='國立成功大學')
+    img(class='img-responsive' src=`${ static }/images/taai_2x.png` alt='中華民國人工智慧學會 TAAI')
+    img(class='img-responsive' src=`${ static }/images/host_mostbig.png` alt='中華民國科技部')
+  section
+    +title('協辦單位')
     h1 科技部AI創新研究中心專案計畫推動辦公室
     h1 財團法人李國鼎科技發展基金會
-    h1 國立成功大學國際產學聯盟
     img(class='img-responsive' src=`${ static }/images/host_gloria.jpg` alt='國立成功大學國際產學聯盟')
+  section
+    +title('贊助單位')
 
 block scripts
   //script(src=`${ static }/js/particles.js`)
