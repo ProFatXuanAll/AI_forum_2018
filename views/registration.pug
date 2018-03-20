@@ -18,39 +18,15 @@ block content
           | Due on 
           span April 07, 2018 at 0:00:00 PM
       div.rightColumn
-        //+button( 'APPLY NOW', '#fee' )
-        +button( 'OPEN SOON', '#fee' )
+        +button( 'APPLY NOW', 'https://events.panmedia.asia/events/e1803191348027042' )
   section#instruction
     +title('費用')
     article
       h2#fee 報名注意事項
       ol
-        li 請填寫以下的表單進行報名，填入個人資料之後選擇付款方式
-        li 繳費方式
-          dl
-            dt （A）信用卡（透過玉山銀行網路特約商店線上金流系統）
-            dt （B）匯款：玉山銀行（808）新竹分行（0060）帳號：0060‐940‐012133，戶名：中華民國人工智慧學會許輝煌
-        li 本會使用玉山銀行網路特約商店線上金流系統。依信用卡國際組織規定,在台灣設置線上金流系統,只限於用當地貨幣(NTD)結帳。 
-        li 送出表單後，若選擇：
-          dl
-            dt （A）信用卡
-              dd * 送出表單之後請不要關閉頁面，網頁將會自動跳轉到玉山銀行的繳費頁面，請耐心等候。
-              dd * 確認完成後將會寄信告知匯款結果。
-            dt （B）匯款
-              dd * 可使用自己帳號或無摺存款匯入"繳費方式"中的帳戶。
-              //dd * 匯款完成後請將匯款收據、姓名傳至 
-                //a(href='taai?th@gmail.com') taai?th@gmail.com
-                //|  主旨請註明「2018 AI Forum報名匯款收據」以便工作人員確認。
-              //dd * 確認完成後將會寄信告知匯款結果。
-        li 現在加入人工智慧學會會員，即可享用會員身份(中華民國人工智慧學會網址 
-          a(href='http://www.taai.org.tw')  http://www.taai.org.tw
-          |  ；若不知會員編號，請洽柯小姐（03）573-1603
-          //或 Email 至 
-          //a(href='taai?th@gmail.com') taai?th@gmail.com
-          |  。
-        //li 若報名資料需做更改，請 email 至 
-          //a(href='taai?th@gmail.com') taai?th@gmail.com
-          //|  ，主旨請註明「2018 AI Forum 報名資料更改」。
+        li 報名費用請參考下方表格
+        li 早鳥優惠只到 4/7，請盡速報名
+        li 學生註冊不包含 5/4 晚宴
     table
       tr
         th 時間
@@ -90,42 +66,9 @@ block content
         td 2300
      
   section
-    //+title('填寫報名資訊')
-    +title('填寫報名資訊（OPEN SOON）')
-  section#form
-    //form(action='' method='post')
-    p
-      | 您的大名
-      input(id='fname' type='text' name='firstName' value='' placeholder='名字（First Name）' required disabled)
-      | 您的姓氏
-      input(id='lname' type='text' name='lastName' value='' placeholder='姓氏（Last Name）' required disabled)
-      | 您的電子郵件
-      input(id='email' type='email' name='email' value='' placeholder='電子郵件（email）' required disabled)
-      | 您的所屬單位
-      input(type='text' name='organization' value='' placeholder='單位（Organization）' disabled)
-      | 您的電話號碼
-      input(id='phone' type='tel' name='phone' value='' placeholder='電話號碼（Phone Number）' required disabled)
-      | 您的生日末四碼
-      input(id='birth' type='text' name='birth' value='' placeholder='生日末四碼（Birthday），若為一月一號，請輸入0101' required disabled)
-      | 您的身份
-      select(id='fee' name='fee' disabled)
-        option(value='2500') 一般身份，TAAI會員(NT$ 2,500)
-        option(value='3500') 一般身份，非TAAI會員(NT$ 3,500)
-        option(value='1400') 學生，TAAI會員(NT$ 1,400)
-        option(value='1800') 學生，非TAAI會員(NT$ 1800)
-      div#taai
-        | 您的TAAI會員編號
-        input(id='taaiId' type='text' name='taai' value='' placeholder='TAAI會員編號（TAAI Membership Number）' disabled)
-      | 您的飲食習慣
-      select(name='dietary' disabled)
-        option(value='free') 葷食
-        option(value='vegetarian') 素食
-      | 備註
-      input(type='text' name='memo' value='' placeholder='備註（Memo）' disabled)
-      input(id='submitBtn' type='submit' value='送出' disabled)
+    +title( '前往報名連結' )
+    +button( 'APPLY NOW', 'https://events.panmedia.asia/events/e1803191348027042' )
 
 block scripts
-  //script(src=`${ static }/js/particles.js`)
-  //script(src=`${ static }/js/index.js`)
-  script(src=`${ static }/js/registration.js`)
+  //script(src=`${ static }/js/registration.js`)
 

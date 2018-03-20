@@ -94,43 +94,13 @@
     background: #bfc4c7
     color: #ffffff
 
-+title(#047b8b, 2)
-
-#form
-  border-top: solid 7px #999999
-  font-size: .8rem
-  background-color: #e3e3e3
-  max-width: 1000px
-  margin: 5% auto
+  +title(#047b8b, 2)
+section:last-of-type
   text-align: center
-  border-radius: 10px
-  padding: 30px
-  %inputField
-    background-color: #ffffff
-    box-sizing: content-box
-    font-size: .65rem
-    width: 80%
-    height: 30px
-    padding: 10px 10px
-    margin: 20px auto
-    display: block
-    border-bottom: 3px solid #b4b4e9
-    border-radius: 5px
-    transition: background-color .5s
-  input
-    &[type=text], &[type=email], &[type=tel]
-    @extend %inputField
-    &[type=text]:focus, &[type=email]:focus, &[type=tel]:focus
-      background-color: #eeeeff
-    &.invalid
-      background-color: #ffcaca
-      border-bottom-color: #e0a9a9
-    &[type=submit]
-      margin-top: 50px
-      width: 50%
-  select
-    @extend %inputField
-    &:focus
-      background-color: #eeeeff
+  +button
 
+  button
+    color: white
+    margin-top: 5%
+    margin-bottom: 5%
 +footer(#047b8b)
