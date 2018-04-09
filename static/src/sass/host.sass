@@ -4,6 +4,7 @@
 @import components/section
 @import components/title
 @import components/footer
+@import components/speaker
 +navibar(#3b9c3d)
 +banner(#3b9c3d, #f4b307)
 
@@ -23,6 +24,29 @@ section:nth-of-type(1)
 
 +sectionSetup( #ffffff, 100%, auto, 2 )
 section:nth-of-type(2)
+  +title( #000000, 1 )
+
+  article
+    margin: 2% auto
+    padding: 2%
+    display: grid
+    grid-template-columns: repeat( 3, minmax( 200px, 1fr ) )
+    grid-column-gap: 5%
+    +speaker
+
+    figure
+      justify-self: center
+
+    figcaption
+      margin-top: 5%
+      margin-bottom: 5%
+      
+    h1, h2
+      text-align: center
+      color: #000000
+
++sectionSetup( #ffffff, 100%, auto, 3 )
+section:nth-of-type(3)
   margin: 0 auto
   max-width: 100%
   text-align: center
@@ -39,8 +63,8 @@ section:nth-of-type(2)
     max-width: 100%
     text-align: center
 
-+sectionSetup( #ffffff, 100%, auto, 3 )
-section:nth-of-type(3)
++sectionSetup( #ffffff, 100%, auto, 4 )
+section:nth-of-type(4)
   margin: 0 auto
   max-width: 100%
   text-align: center

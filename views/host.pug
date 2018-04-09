@@ -8,25 +8,36 @@ block header
 
 block content
   include components/title.pug
+  include components/speaker.pug
   section
     +title('主辦單位')
     img(class='img-responsive' src=`${ static }/images/top001.png` alt='國立成功大學')
     img(class='img-responsive' src=`${ static }/images/taai_2x.png` alt='中華民國人工智慧學會 TAAI')
     img(class='img-responsive' src=`${ static }/images/host_mostbig.png` alt='中華民國科技部')
   section
+    +title('主辦委員')
+    article
+      +speaker( `${ static }/images/committee_hung_yu_kao.jpg`, '高宏宇', '高宏宇', '成功大學資訊系系主任', `#` )
+      +speaker( `${ static }/images/committee_kun_ta_chuang.jpg`, '莊坤達', '莊坤達', '成功大學資訊系副教授', `#` )
+      +speaker( `${ static }/images/committee_wen_ji_pun.jpg`, '彭文志', '彭文志', '交通大學資訊系教授', `#` )
+      +speaker( `${ static }/images/committee_wei_yung_ma.jpg`, '馬偉雲', '馬偉雲', '中央研究院助研究員', `#` )
+      +speaker( `${ static }/images/committee_yu_tsao.jpg`, '曹昱', '曹昱', '中央研究院副研究員', `#` )
+
+  section
     +title('協辦單位')
-    //- img(class='img-responsive' src=`${ static }/images/host_itri.png` alt='工業技術研究院')
+    //- img(class='img-responsive' src=`${ static }/images/host_itri.png` alt='工業技術研究院' width='40%' height='auto')
     //- h1 工業技術研究院巨量資訊科技中心
-    img(class='img-responsive' src=`${ static }/images/host_ieee.jpg` alt='IEEE')
-    img(class='img-responsive' src=`${ static }/images/host_ainew.jpg` alt='科技部AI創新研究中心專案計畫推動辦公室')
+    img(class='img-responsive' src=`${ static }/images/host_ieee.jpg` alt='IEEE' width='40%' height='auto')
+    img(class='img-responsive' src=`${ static }/images/host_ainew.jpg` alt='科技部AI創新研究中心專案計畫推動辦公室' width='20%' height='auto')
     h1 財團法人李國鼎科技發展基金會
   section
     +title('贊助單位')
-    img(class='img-responsive' src=`${ static }/images/sponser_emotibot.png` alt='竹間智能科技有限公司')
+    img(class='img-responsive' src=`${ static }/images/sponser_emotibot.png` alt='竹間智能科技有限公司' width='20%' height='auto')
     a(href='https://www.kdanmobile.com/zh-tw')
-      img(class='img-responsive' src=`${ static }/images/sponser_kdan.png` alt='凱鈿行動科技')
+      img(class='img-responsive' src=`${ static }/images/sponser_kdan.png` alt='凱鈿行動科技' width='20%' height='auto')
     a(href='https://www.appier.com')
-      img(class='img-responsive' src=`${ static }/images/sponser_appier.png` alt='Appier')
+      img(class='img-responsive' src=`${ static }/images/sponser_appier.png` alt='Appier' width='20%' height='auto')
+    img(class='img-responsive' src=`${ static }/images/sponser_pixnet.jpg` alt='PIXNET' width='20%' height='auto')
 
 block scripts
   //script(src=`${ static }/js/particles.js`)
