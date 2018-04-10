@@ -32,12 +32,20 @@ block content
     h1 財團法人李國鼎科技發展基金會
   section
     +title('贊助單位')
-    img(class='img-responsive' src=`${ static }/images/sponser_emotibot.png` alt='竹間智能科技有限公司' width='20%' height='auto')
-    a(href='https://www.kdanmobile.com/zh-tw')
-      img(class='img-responsive' src=`${ static }/images/sponser_kdan.png` alt='凱鈿行動科技' width='20%' height='auto')
-    a(href='https://www.appier.com')
-      img(class='img-responsive' src=`${ static }/images/sponser_appier.png` alt='Appier' width='20%' height='auto')
-    img(class='img-responsive' src=`${ static }/images/sponser_pixnet.jpg` alt='PIXNET' width='20%' height='auto')
+    +title('Gold Sponsor')
+    article
+      div.empty
+      img(class='img-responsive' src=`${ static }/images/sponser_emotibot.png` alt='竹間智能科技有限公司')
+      a(href='https://www.kdanmobile.com/zh-tw')
+        img(class='img-responsive' src=`${ static }/images/sponser_kdan.png` alt='凱鈿行動科技')
+      div.empty
+    +title('Silver Sponsor')
+    article
+      div.empty
+      a(href='https://www.appier.com')
+        img(class='img-responsive' src=`${ static }/images/sponser_appier.jpg` alt='Appier')
+      img(class='img-responsive' src=`${ static }/images/sponser_pixnet.jpg` alt='PIXNET')
+      div.empty
 
 block scripts
   //script(src=`${ static }/js/particles.js`)
