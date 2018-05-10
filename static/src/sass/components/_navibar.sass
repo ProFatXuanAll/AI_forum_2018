@@ -15,11 +15,8 @@
       text-align: center
       padding: 14px 10px 7px
       text-decoration: none
-      // add by chou
       transition: border-bottom .5s
       &:hover
-        //background-color: #333333
-        // add by chou
         border-bottom: 3px solid rgba(255, 255, 255, .7)
       &:nth-child(1)
         grid-area: index
@@ -28,14 +25,16 @@
       &:nth-child(3)
         grid-area: agenda
       &:nth-child(4)
-        grid-area: host
+        grid-area: activity
       &:nth-child(5)
-        grid-area: accomondation
+        grid-area: host
       &:nth-child(6)
-        grid-area: location
+        grid-area: accomondation
       &:nth-child(7)
+        grid-area: location
+      &:nth-child(8)
         grid-area: contact
  
-    grid-template-columns: 60px 60px 60px auto 120px 100px 100px 100px
-    grid-template-areas: 'index registration agenda  .  host accomondation location contact'
+    grid-template-columns: 60px 60px 60px 100px auto 120px 100px 100px 100px
+    grid-template-areas: 'index registration agenda activity .  host accomondation location contact'
     align-items: start

@@ -1,0 +1,35 @@
+extends layouts/base.pug
+
+block css
+  link(rel='stylesheet' type='text/css' href=`${ static }/css/activity.css`)
+
+block header
+
+block content
+  include components/title.pug
+  +banner
+  section
+    +title( '照片花絮' )
+    article
+      a(href='https://imgur.com/a/LCh18ZD') 點我觀看
+  section
+    +title( '影片花絮' )
+    article
+      a(href='') 點我觀看
+  section
+    +title( '簡報內容' )
+    article
+      a(href=`${ static }/files/Intro_to_Toutiao.pdf` target='_blank')
+        span(class='far fa-file-pdf')
+        |  Intro to Toutiao
+      a(href=`${ static }/files/Machines_Acting_Rationally.pdf` target='_blank')
+        span(class='far fa-file-pdf')
+        |  Machines Acting Rationally
+      a(href=`${ static }/files/LARC.pdf` target='_blank')
+        span(class='far fa-file-pdf')
+        |  LARC
+      a(href=`${ static }/files/Panel_AI.pdf` target='_blank')
+        span(class='far fa-file-pdf')
+        |  Panel AI
+
+block scripts

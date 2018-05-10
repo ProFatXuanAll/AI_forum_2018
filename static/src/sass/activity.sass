@@ -1,0 +1,71 @@
+@import components/reset
+@import components/navibar
+@import components/banner
+@import components/section
+@import components/staticPath
+@import components/title
+@import components/footer
+
++navibar(#eb5a5a)
++banner(#eb5a5a, #00a0e7)
+
+// section 1, color #ffffff
++sectionSetup( #ffffff, 100%, auto, 1 )
+section:nth-of-type(1)
+  width: 100%
+  padding: 5%
+  +title( #00a0e7, 1 )
+
+  article
+    margin-top: 5%
+    display: grid
+    grid-template-areas: "link"
+    grid-template-columns: 100%
+    justify-content: center
+
+    a
+      grid-area: link
+      text-align: center
+      text-decoration: underline
+
+// section 2, color #ffffff
++sectionSetup( #ffffff, 100%, auto, 2 )
+section:nth-of-type(2)
+  width: 100%
+  padding: 5%
+  +title( #00a0e7, 1 )
+
+  article
+    margin-top: 5%
+    display: grid
+    grid-template-areas: "link"
+    grid-template-columns: 100%
+    justify-content: center
+
+    a
+      grid-area: link
+      text-align: center
+      text-decoration: underline
+
+// section 3, color #ffffff
++sectionSetup( #ffffff, 100%, auto, 3 )
+section:nth-of-type(3)
+  width: 100%
+  padding: 5%
+  +title( #00a0e7, 1 )
+
+  article
+    margin-top: 5%
+    display: grid
+    grid-template-areas: "file1 file2" "file3 file4"
+    grid-column-gap: 5%
+
+    @for $i from 1 through 4
+      a:nth-of-type( #{ $i } )
+        grid-area: file#{ $i }
+        @if $i % 2 == 1
+          justify-self: right
+        @else
+          justify-self: left
+
++footer(#eb5a5a)
