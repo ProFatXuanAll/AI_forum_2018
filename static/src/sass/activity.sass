@@ -60,10 +60,10 @@ section:nth-of-type(3)
   article
     margin-top: 5%
     display: grid
-    grid-template-areas: "file1 file2" "file3 file4"
+    grid-template-areas: "file1 file2" "file3 file4" "file5 ."
     grid-column-gap: 5%
 
-    @for $i from 1 through 4
+    @for $i from 1 through 5
       a:nth-of-type( #{ $i } )
         grid-area: file#{ $i }
         @if $i % 2 == 1
