@@ -38,14 +38,17 @@ section:nth-of-type(2)
   article
     margin-top: 5%
     display: grid
-    grid-template-areas: "link"
+    grid-template-areas: "link1" "link2" "link3" "link4" "link5"
     grid-template-columns: 100%
-    justify-content: center
+    grid-template-rows: 100% 100% 100% 100% 100%
+    grid-row-gap: 5%
 
-    a
-      grid-area: link
-      text-align: center
-      text-decoration: underline
+    @for $i from 1 through 5
+      iframe:nth-of-type( #{ $i } )
+        grid-area: link#{ $i }
+        width: 80vw
+        height: 80vh
+        justify-self: center
 
 // section 3, color #ffffff
 +sectionSetup( #ffffff, 100%, auto, 3 )
